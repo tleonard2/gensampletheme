@@ -1,0 +1,92 @@
+/*
+	Theme Name: Agency Test
+	Theme URI: http://my.studiopress.com/themes/agency/
+	Description: Represent your professional services with confidence and clarity by harnessing the streamlined professionalism of the Agency theme.
+	Author: StudioPress
+	Author URI: http://www.studiopress.com/
+	Version: 3.1.2
+
+	Tags: black, orange, white, one-column, two-columns, three-columns, responsive-layout, custom-menu, full-width-template, sticky-post, theme-options, threaded-comments, translation-ready, premise-landing-page
+
+	Template: genesis
+	Template Version: 2.1
+
+	License: GPL-2.0+
+	License URI: http://www.opensource.org/licenses/gpl-license.php
+*/
+
+.site-header {
+    background-color: #FFF;
+    left: 0;
+    min-height: 150px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+}
+
+.header-image .site-title a {
+    float: left;
+    min-height: 140px;
+    width: 100%;
+}
+
+.home-top .wrap {
+    color: #333;
+    font-family: "Spinnaker",sans-serif;
+    margin: 12% 10% 2%;
+    text-align: center;
+  background: #FFF;
+  max-width: 500px;
+  opacity: 0.95;
+   padding: 5% 0;
+}
+
+.home-middle {
+    color: #333;
+    font-family: "Spinnaker",sans-serif;
+    margin: 1% 10% 10%;
+    text-align: center;
+  background: #FFF;
+  max-width: 500px;
+  opacity: 0.95;
+   padding: 0;
+}
+
+.home-bottom {
+    color: #333;
+    font-family: "Spinnaker",sans-serif;
+    margin: 1% 10%;
+    text-align: center;
+  background: #FFF;
+  max-width: 500px;
+  opacity: 0.95;
+   padding: 0;
+}
+
+.agency-pro-home .content .textwidget {
+    padding: 0 40px;
+}
+
+.agency-pro-home .content .widget {
+    background: none repeat scroll 0 0 #fff;
+  opacity: 0.8;
+    margin-bottom: 80px;
+    padding: 40px;
+}
+
+.genesis-nav-menu a {
+	border-top: 2px solid transparent;
+	color: #000;
+	display: block;
+	padding: 18px 16px 20px;
+	position: relative;
+}
+
+.genesis-nav-menu a:hover,
+.genesis-nav-menu .current-menu-item > a,
+.genesis-nav-menu .v .current-menu-item > a:hover {
+	background-color: none;
+	border-color: none;
+	color: #d7c603;
+}

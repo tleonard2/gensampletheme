@@ -1,0 +1,1496 @@
+/*
+Theme Name: 	Terri Burkhartz
+Theme URI: http://wordpress.org/extend/themes/twentytwelve
+Description: 	Child theme to twentytwelve
+Version: 	1.2.1
+Author: 	FiddleFace
+Author URI: 	http://www.fiddleface.com
+Template:       twentytwelve
+Version:        0.1.0
+*/
+/*
+==========================================================================
+   Styles
+==========================================================================
+*/
+body {
+	background:url(images/seafoam-bokeh-2000x143px.jpg) no-repeat center 140px;
+	font-size:62.5%;
+/* 1em = 10px */
+	line-height:1.5em;
+	color:#8A8C8E;
+}
+
+body.home {
+	background:url(images/slidebk.gif) repeat-x left 140px;
+}
+
+#container {
+	width:1024px;
+	margin:0 auto;
+	padding:0;
+}
+
+/*
+==========================================================
+  General
+==========================================================
+*/
+hr {
+	-moz-box-sizing:content-box;
+	box-sizing:content-box;
+	height:0;
+	display:block;
+	height:1px;
+	border:0;
+	border-top:1px solid #ccc;
+	margin:1em 0;
+	padding:0;
+}
+
+p {
+	font-size:1.3em;
+	font-family:'PT Sans',sans-serif;
+	font-weight:400;
+	line-height:1.5em;
+}
+
+p.red {
+	color:#A93439;
+	text-align:center;
+}
+
+h1,h2,h3,h4 {
+	font-family:'lato',sans-serif;
+	font-weight:400;
+	color:#492763;
+}
+
+h1 {
+	font-size:2.25em;
+	line-height:1.3em;
+	margin:0 0 .66667em;
+}
+
+h1.bannerline {
+	color:#A93439;
+	padding-top:150px;
+	text-align:left;
+	font-size:2.4em;
+	float:right;
+	margin:10px 40px 0 0;
+}
+
+h1.tagline {
+	color:#A93439;
+	margin-bottom:20px;
+	text-align:center;
+}
+
+h2 {
+	font-size:2em;
+	line-height:1.33333em;
+	margin:1.06667em 0 .53333em;
+}
+
+h2.subhead {
+	margin:-5px 0 10px;
+	text-align:center;
+	padding:0;
+	line-height:1;
+}
+
+h3 {
+	font-size:1.6em;
+	line-height:1.45455em;
+	margin:1.45455em 0 .72727em;
+}
+
+h4 {
+	font-size:1.4em;
+	line-height:1.71429em;
+	margin:0 0 .57143em;
+	font-weight:700;
+}
+
+ul {
+	padding-left:50px;
+	margin-bottom:15px;
+}
+
+ul li {
+	padding-left:5px;
+	list-style:disc;
+	padding-bottom:10px;
+	line-height:160%;
+}
+
+a {
+	text-decoration:none;
+}
+
+a:link,a:visited {
+	color:#A93439;
+}
+
+a:hover {
+	color:#005C6E;
+}
+
+.left,.alignleft {
+	float:left;
+	margin-right:10px;
+}
+
+.right,.alignright {
+	float:right;
+	margin-left:10px;
+}
+
+.center {
+	text-align:center;
+}
+
+/*
+==========================================================
+  header
+==========================================================
+*/
+header {
+	width:1024px;
+	margin:0 auto;
+}
+
+#slider {
+	height:237px;
+	margin-bottom:30px;
+	background:#000 url(images/banner.jpg) no-repeat 0 top;
+}
+
+#insideslider {
+	padding:85px 0 10px 20px;
+}
+
+#insideslider h1 {
+	font-size:4em;
+	font-family:'PT Sans',sans-serif;
+}
+
+/*
+==========================================================
+  nav
+==========================================================
+*/
+nav {
+	text-transform:uppercase;
+	font-size:1.4em;
+	height:132px;
+	width:845px;
+	font-family:'PT Sans',sans-serif;
+	margin:0 auto;
+}
+
+nav ul.nav-menu {
+	width:845px;
+	padding:0;
+	margin:0 auto;
+}
+
+nav ul.nav-menu li {
+	margin:60px 0 15px;
+	float:left;
+	display:block;
+	padding:0;
+}
+
+nav ul.nav-menu li a {
+	margin:0 15px;
+	text-decoration:none;
+	display:block;
+}
+
+nav ul.nav-menu li.menu-item-36 {
+	margin:0;
+	background:url(images/logo.png) no-repeat;
+	text-indent:-9999px;
+}
+
+nav ul.nav-menu li.menu-item-36 a {
+	height:112px;
+	width:100px;
+}
+
+#container nav li.menu-item-30 a,#container nav li.menu-item-29 a,#container nav li.menu-item-32 a {
+	margin:0 17px;
+}
+
+#container nav li.menu-item-177 a {
+	margin-right:10px;
+	padding:0;
+}
+
+nav ul.nav-menu li a:link,nav ul.nav-menu li a:visited {
+	color:#888A8C;
+}
+
+nav ul.nav-menu li a:hover,nav ul.nav-menu li.current_page_item a,nav ul.nav-menu li.active a {
+	color:#A93439;
+}
+
+/*
+==========================================================
+  Content
+==========================================================
+*/
+#content {
+	width:990px;
+	margin:0 auto;
+}
+
+/*
+==========================================================
+  Content - Home
+==========================================================
+*/
+#content .mktgbuttons,#content .infobuttons {
+	width:100%;
+}
+
+#content .mktgbuttons ul {
+	float:left;
+	margin:0;
+	padding:0;
+	margin-bottom:10px;
+}
+
+#content .mktgbuttons li {
+	float:left;
+	display:block;
+	margin-right:15px;
+	padding:0;
+	text-align:center;
+}
+
+#content .mktgbuttons li.advice {
+	margin-right:0;
+}
+
+#content .mktgbuttons li a {
+	width:320px;
+	display:block;
+	height:160px;
+}
+
+#content li.mktg a:link,#content li.mktg a:visited {
+	background:url(images/mktgthatwks.jpg) no-repeat;
+}
+
+#content li.mktg a:hover {
+	background:url(images/mktgthatwks_on.jpg) no-repeat;
+}
+
+#content li.biz a:link,#content li.biz a:visited {
+	background:url(images/bizthatgrow.jpg) no-repeat;
+}
+
+#content li.biz a:hover {
+	background:url(images/bizthatgrow_on.jpg) no-repeat;
+}
+
+#content li.advice a:link,#content li.advice a:visited {
+	background:url(images/advicethatpays.jpg) no-repeat;
+	margin-right:0;
+}
+
+#content li.advice a:hover {
+	background:url(images/advicethatpays_on.jpg) no-repeat;
+	margin-right:0;
+}
+
+#content .mktgbuttons li a {
+	text-indent: -9999px;
+}
+
+#content .mktgbuttons li a:link,#content .mktgbuttons li a:visited {
+	color:#492763;
+}
+
+#content .mktgbuttons li a:hover {
+	color:#A93439;
+}
+
+#content .mktgbuttons span.secondline {
+	font-family:'PT Sans',sans-serif;
+	font-size:75%;
+	letter-spacing:0;
+	color:#808285;
+	margin-top:0;
+	padding-top:0;
+}
+
+/*
+==========================================================
+  Home - two columns
+==========================================================
+*/
+.twocolumns {
+	font-size:1.3em;
+	line-height:150%;
+}
+
+.column1 {
+	float:left;
+	margin-right:25px;
+	width:440px;
+	padding-left:30px;
+}
+
+.column2 {
+	width:470px;
+	float:left;
+}
+
+.linkarrow2 {
+	padding-top:5px;
+	vertical-align:middle;
+}
+
+.linkarrow2 img {
+	border:none;
+}
+
+/*
+==========================================================
+  Home - swirly
+==========================================================
+*/
+.swirly {
+	clear:both;
+	padding-top:30px;
+	width:100%;
+	background:url(images/swirlbk.png) repeat-x left 15px;
+	margin-bottom:20px;
+}
+
+.swirly img {
+	margin:-60px 0 0 440px;
+	width:100px;
+	text-align:center;
+}
+
+/*
+==========================================================
+  Content - Info Buttons
+==========================================================
+*/
+#content .infobuttons {
+	width:100%;
+}
+
+#content .infobuttons .col1,#content .infobuttons .col2,#content .infobuttons .col3 {
+	width:320px;
+	float:left;
+	margin-right:15px;
+	margin-bottom:40px;
+	padding:0;
+}
+
+#content .infobuttons .col3 {
+	margin-right:0;
+}
+
+/*
+==========================================================
+ Phone Home Col1
+==========================================================
+*/
+.infobuttons .col1 .phonehome {
+	background:#EFEFEF;
+	border-radius:1em;
+	padding:5px 5px 10px 10px;
+	margin:0 auto;
+	height:140px;
+}
+
+.infobuttons .col1 .phonehome {
+	padding:45px 5px 10px 30px;
+}
+
+.infobuttons .col1 .phonehome ul li {
+	list-style:none;
+	line-height:1.5;
+	padding:2px 0 32px 50px;
+	margin:0;
+}
+
+.infobuttons .col1 .phonehome h3 {
+	color:#68BBAF;
+	margin:0;
+	padding:0;
+	line-height:0;
+	font-size:2.4em;
+	font-family:'PT Sans',sans-serif;
+}
+
+.infobuttons .col1 .phonehome h4 {
+	color:#68BBAF;
+	margin:0;
+	padding:0;
+	font-size:2em;
+	font-weight:400;
+	line-height:0;
+	font-family:'PT Sans',sans-serif;
+}
+
+.infobuttons .col1 .phonehome p {
+	line-height:1.4em;
+	font-size:1.8em;
+}
+
+.infobuttons .col1 .phonehome img {
+	float:left;
+	margin:0 20px 0 5px;
+}
+
+/*
+==========================================================
+ Homepage From the blog Col2
+==========================================================
+*/
+.infobuttons .col2 .fromtheblog {
+	border:1px solid #68BBAF;
+	border-radius:1em;
+	height:193px;
+}
+
+.infobuttons .col2 p.fromblog {
+	background-color:#68BBAF;
+	padding:5px 15px 5px 5px;
+	margin:10px 190px 0 0;
+	color:#FFF;
+	text-transform:uppercase;
+	font-size:1.4em;
+}
+
+.infobuttons .col2 .fromtheblog ul {
+	margin:10px 0 0;
+	padding:0 0 5px 10px;
+	font-family:'PT Sans',sans-serif;
+}
+
+.infobuttons .col2 .fromtheblog li {
+	list-style:none;
+	font-size:1.6em;
+	margin-bottom:0;
+	padding-bottom:10px;
+	line-height:1.1em;
+}
+
+.listing-item a {
+	display:block;
+}
+
+.listing-item .date {
+	font-size:.85em;
+	line-height:1em;
+}
+
+/*
+==========================================================
+ Homepage Signupbox Col3
+==========================================================
+*/
+.infobuttons .col3 .signupbox {
+	background:#A93439;
+	border-radius:1em;
+	padding:0 5px 10px 10px;
+	margin:0 auto;
+	height:185px;
+}
+
+.infobuttons .col3 .signupbox p {
+	color:#FFF;
+	padding:5px 5px 5px 0;
+	font-size:1.6em;
+	margin:0 auto;
+	line-height:1.2em;
+}
+
+/* Minimum width of 600 pixels. */
+@media screen and (min-width: 600px) {
+	.infobuttons .col3 .signupbox p {
+		font-size:1.5em;
+		padding:5px 5px 10px 0;
+	}
+}
+
+.infobuttons .col3 img.freebie {
+	float:right;
+	margin:-20px 0 0 5px;
+}
+
+/*
+==========================================================
+ Homepage Mail Chimp
+==========================================================
+*/
+.col3 #mc_embed_signup {
+	margin:0;
+	padding:0;
+	width:207px;
+	height:34px;
+}
+
+.infobuttons .col3 #mc_embed_signup form input {
+	height:22px;
+	width:185px;
+	border:1px solid #68BBAF;
+	padding:0 0 0 5px;
+	margin:0 0 10px;
+	border-radius:1em;
+}
+
+.infobuttons .col3 #mc_embed_signup .button {
+	width:auto;
+	background-color:#68BBAF;
+	font-size:.65em;
+	color:#fff;
+	margin:0 0 0 60px;
+	text-transform:uppercase;
+	border-radius:1em;
+	padding:0 8px;
+	line-height:1em;
+	font-size:1em;
+}
+
+.infobuttons .col3 #mc_embed_signup .button:hover {
+	background:#FFF;
+	color:#A93439;
+}
+
+/*
+==========================================================
+ Home- QuoteBox
+==========================================================
+*/
+.home .quotebox {
+	clear:both;
+  background:#F0F0F0;
+	margin:0 -9999rem 50px;
+	padding:10px 9999rem 50px;
+}
+
+.home .quotebox p.quote {
+	font-family:Georgia,serif;
+	font-style:italic;
+	font-size:2em;
+	color:#68BBAF;
+	padding:10px 0 0;
+	margin:20px 0 0;
+}
+
+.home .quotebox p.name {
+	float:right;
+	text-align:left;
+	font-family:'Lato',sans-serif;
+	font-style:normal;
+	font-size:1.6em;
+	color:#492763;
+	margin-top:0;
+}
+
+.home .quotebox .name a {
+	float:right;
+	color:#492763;
+}
+
+/*
+==========================================================
+  Leftcol
+==========================================================
+*/
+.leftcol {
+	width:290px;
+	float:left;
+	margin-right:30px;
+}
+
+.leftcol .intro {
+	background:url(images/IntroText_Bubble.jpg) no-repeat;
+	height:auto;
+	padding:5px 5px 10px 10px;
+	margin:0 5px 0 0;
+}
+
+.leftcol h3 {
+	padding:5px 5px 0 0;
+	margin:0 5px 0 0;
+}
+
+.leftcol .quote {
+	font-family:Georgia,serif;
+	font-style:italic;
+	font-size:2em;
+	padding:0;
+	margin:0;
+}
+
+.leftcol .colname {
+	text-align:right;
+	font-family:'PT Sans',sans-serif;
+	font-size:1.8em;
+	color:#492763;
+}
+
+.leftcol .colquotemarkb {
+	margin:-30px 20px 0 0;
+	float:right;
+}
+
+.leftcol .colquotemarkblt {
+	margin:-35px 20px 0 90px;
+}
+
+.leftcol .sideswirly {
+	clear:both;
+	padding:0;
+	width:250px;
+	background:url(images/swirlbk.png) repeat-x left 0;
+	margin:0;
+}
+
+.leftcol .sideswirly img {
+	margin:5px 0 0 105px;
+	width:50px;
+	text-align:center;
+}
+
+.leftcol .widget {
+	margin-bottom:20px;
+}
+
+.leftcol h3 {
+	font-size:1.8em;
+	color:#492763;
+	line-height:1.5em;
+	margin:0 0 .53333em;
+	padding:0 15px 0 5px;
+}
+
+.leftcol .widget-title {
+	display:none;
+}
+
+#text-2 {
+	padding-top:10px;
+}
+
+/*
+==========================================================
+ Phone Left col
+==========================================================
+*/
+.leftcol .phonehome {
+	background:#EFEFEF;
+	border-radius:1em;
+	padding:15px 5px 10px 10px;
+	margin:0 auto;
+	height:90px;
+	width:250px;
+	float:left;
+}
+
+.leftcol .phonehome ul li {
+	list-style:none;
+	padding:0 0 2px 50px;
+	margin:0;
+}
+
+.leftcol .phonehome h3 {
+	color:#68BBAF;
+	margin:0;
+	padding:0;
+	line-height:0;
+	font-size:2.4em;
+	font-family:'PT Sans',sans-serif;
+}
+
+.leftcol .phonehome h4 {
+	color:#68BBAF;
+	margin:0;
+	padding:0;
+	font-size:2em;
+	font-weight:400;
+	line-height:0;
+	font-family:'PT Sans',sans-serif;
+}
+
+.leftcol .phonehome p {
+	line-height:1.4em;
+	font-size:1.8em;
+}
+
+.leftcol .phonehome img {
+	float:left;
+	margin:0 20px 0 5px;
+}
+
+/*
+==========================================================
+  Contact page
+==========================================================
+*/
+p.contactaddress {
+	padding-left:52px;
+	margin-top:-14px;
+}
+
+/*
+==========================================================
+  Main
+==========================================================
+*/
+.main {
+	width:430px;
+	float:left;
+	margin:0 30px 50px 0;
+}
+
+.testimonials .main,.faq .main,.marketing-that-works .main,.businesses-that-grow .main {
+	width:640px;
+}
+
+.main p {
+	font-size:1.7em;
+	font-family:'PT Sans',sans-serif;
+	font-weight:400;
+	line-height:1.5em;
+	padding:0;
+	margin:0 0 10px;
+}
+
+.main ul,.main ol {
+	font-size:1.7em;
+	font-family:'PT Sans',sans-serif;
+	font-weight:400;
+	line-height:1.5em;
+	margin:0 0 5px;
+}
+
+ol li {
+	padding-left:5px;
+	padding-bottom:10px;
+	line-height:160%;
+}
+
+.main h3 {
+	font-size:1.8em;
+	color:#492763;
+	line-height:1.5em;
+	margin:20px 0 .53333em;
+}
+
+.main h3.opener {
+	font-size:1.8em;
+	color:#492763;
+	line-height:1.5em;
+	margin:0 0 .53333em;
+}
+
+/*
+==========================================================
+  Main - swirly
+==========================================================
+*/
+.midquote .midswirly {
+	clear:both;
+	padding-top:20px;
+	width:100%;
+	background:url(images/swirlbk.png) repeat-x left 15px;
+	margin:10px 0;
+	text-align:center;
+}
+
+.midquote .midswirly img {
+	margin:0 auto;
+	width:65px;
+}
+
+.midquote p.quote {
+	font-family:Georgia,serif;
+	font-style:italic;
+	font-size:1.6em;
+	padding:0 10px;
+	margin:0;
+}
+
+.testimonials .midquote p.quote {
+	font-family:Georgia,serif;
+	font-style:italic;
+	font-size:1.6em;
+	padding:0;
+	margin:0;
+}
+
+.midquote p.name {
+	float:right;
+	text-align:left;
+	font-family:'Lato',sans-serif;
+	font-style:normal;
+	font-size:1.4em;
+	color:#492763;
+	margin:5px 0 0;
+	padding:0 30px 0 0;
+}
+
+.midquote .name a {
+	float:right;
+	color:#492763;
+}
+
+/*
+==========================================================
+  Right col
+==========================================================
+*/
+.rightcol {
+	width:210px;
+	float:left;
+}
+
+.rightcol h3 {
+	margin:10px 0 0;
+}
+
+.rightcol ul {
+	margin:10px 0 0 20px;
+	padding:0;
+	list-style:none;
+	font-size:.85em;
+}
+
+.rightcol li {
+	margin-bottom:5px;
+	color:#8A8C8E;
+}
+
+.rightcol img {
+	padding-bottom:10px;
+}
+
+/*
+==========================================================
+ Column Signupbox
+==========================================================
+*/
+.rightcol .signupbox,.leftcol .signupbox {
+	background:#A93439;
+	border-radius:1em;
+	width:210px;
+	color:#FFF;
+	padding:5px 5px 10px 10px;
+	font-size:1.2em;
+	margin:0 auto;
+	height:auto;
+}
+
+.leftcol .signupbox {
+	background:#A93439;
+	border-radius:1em;
+	width:250px;
+	color:#FFF;
+	margin:20px 10px 0 0;
+}
+
+.rightcol .signupbox img.freebie,.leftcol .signupbox img.freebie {
+	float:right;
+	margin:-30px 7px 0 5px;
+}
+
+/*
+==========================================================
+ Rt sidecol Mail Chimp
+==========================================================
+*/
+.rightcol .signupbox #mc_embed_signup form,.leftcol .signupbox #mc_embed_signup form {
+	width:205px;
+	margin:0;
+	padding:0;
+}
+
+.leftcol .signupbox #mc_embed_signup form {
+	width:255px;
+}
+
+.rightcol .signupbox #mc_embed_signup input,.leftcol .signupbox #mc_embed_signup input {
+	height:25px;
+	font-size:1em;
+	width:200px;
+	border:1px solid #68BBAF;
+	padding:0 0 0 5px;
+	margin:0 0 10px;
+	border-radius:1em;
+}
+
+.leftcol .signupbox #mc_embed_signup form input {
+	width:220px;
+	margin:0 0 10px 5px;
+}
+
+.rightcol .signupbox #mc_embed_signup .button,.leftcol .signupbox #mc_embed_signup .button {
+	width:auto;
+	background-color:#68BBAF;
+	color:#FFF;
+	height:22px;
+	font-size:1em;
+	margin:0;
+	text-transform:uppercase;
+	border-radius:1em;
+	text-align:center;
+	margin:0 0 0 50px;
+	padding:0 5px;
+}
+
+.rightcol .signupbox #mc_embed_signup .button:hover,.leftcol .signupbox #mc_embed_signup .button:hover {
+	background:#FFF;
+	color:#A93439;
+}
+
+.leftcol .signupbox #mc_embed_signup .button {
+	margin:0 0 0 70px;
+}
+
+/*
+==========================================================
+  Side - swirly
+==========================================================
+*/
+.sideswirly {
+	clear:both;
+	padding-top:30px;
+	width:100%;
+	background:url(images/swirlbk.png) repeat-x left 15px;
+	margin-bottom:10px;
+}
+
+.sideswirly img {
+	margin:-60px 0 0 80px;
+	width:50px;
+	text-align:center;
+}
+
+/*
+==========================================================
+ Phone Right Col
+==========================================================
+*/
+.rightcol .phonehome {
+	background:#EFEFEF;
+	border-radius:1em;
+	padding:25px 5px 10px 10px;
+	margin:0 auto;
+	height:90px;
+}
+
+.rightcol .phonehome {
+	margin:25px auto;
+	width:210px;
+}
+
+.rightcol .phonehome ul {
+	list-style:none;
+	padding:0 0 0 90px;
+	margin:0;
+}
+
+.rightcol .phonehome ul li {
+	list-style:none;
+	margin:0;
+}
+
+.rightcol .phonehome h3 {
+	color:#68BBAF;
+	margin:0;
+	padding:0;
+	line-height:0;
+	font-size:2.4em;
+	font-family:'PT Sans',sans-serif;
+}
+
+.rightcol .phonehome h3 {
+	font-size:2.2em;
+}
+
+.rightcol .phonehome h4 {
+	color:#68BBAF;
+	margin:0;
+	padding:0;
+	font-size:2em;
+	font-weight:400;
+	line-height:0;
+	font-family:'PT Sans',sans-serif;
+}
+
+.rightcol .phonehome p {
+	line-height:1em;
+	font-size:2em;
+}
+
+.rightcol .phonehome img {
+	float:left;
+	margin:0 20px 0 0;
+	padding:0;
+}
+
+.rightcol .widget_text .widget-title {
+	display:none;
+}
+
+/*
+==========================================================
+ Blog Content
+==========================================================
+*/
+#blog-content {
+	padding:0 0 0 20px;
+	font-family:'PT Sans',sans-serif;
+}
+
+#blog-content red {
+	color:#A93439;
+}
+
+.blog header.entry-header {
+	width:740px;
+	margin:0 auto;
+}
+
+.entry-content,.blog-entry-content,article {
+	width:740px;
+	float:left;
+	margin:0;
+	padding:0 0 20px;
+	font-size:1.1em;
+}
+
+.blog-entry-content .entry-content {
+	border-left:none;
+	padding:0;
+	font-size:1em;
+	padding-bottom:20px;
+}
+
+#blog-content .entry-content {
+	padding:0;
+}
+
+.blog h1.entry-title {
+	width:740px;
+}
+
+h1.archive-title {
+	color:#024FB2;
+}
+
+.entry-content ul,.blog-entry-content ul,article ul {
+	font-size:1.3em;
+	font-weight:400;
+	line-height:1em;
+	margin:0;
+}
+
+.entry-content ul ul,.blog-entry-content ul ul,article ul ul {
+	font-size:1em;
+	font-weight:400;
+	line-height:1em;
+	margin:10px 0 0;
+}
+
+.comments-link {
+	font-size:1.4em;
+}
+
+.meta {
+	margin:15px 0;
+	line-height:160%;
+}
+
+.postmetadata {
+	margin:15px 0 30px;
+}
+
+footer.entry-meta {
+	margin-bottom:40px;
+}
+
+#comments label {
+	margin-right:23px;
+}
+
+#comments .comment-form-comment label {
+	margin-right:10px;
+}
+
+#comments input {
+	height:20px;
+}
+
+.form-allowed-tags {
+	display:none;
+}
+
+.entry-content .entry-meta {
+	margin:10px 0;
+	padding:10px 0;
+}
+
+.entry-content .entry-meta a {
+	color:#A93439;
+}
+
+/*
+==========================================================
+ Blog right Col
+==========================================================
+*/
+#secondary {
+	padding:0 20px 0 0;
+	float:right;
+	width:210px;
+}
+
+#secondary ul {
+	margin:0;
+	padding:0 0 0 20px;
+	font-size:1.2em;
+}
+
+#secondary li {
+	padding:0;
+	margin:0;
+	text-transform:capitalize;
+}
+
+#secondary input {
+	height:20px;
+}
+
+/*
+==========================================================
+ Phone Right Col
+==========================================================
+*/
+.textwidget .phonehome {
+	background:#EFEFEF;
+	border-radius:1em;
+	padding:25px 5px 10px 10px;
+	margin:20px auto;
+	height:90px;
+}
+
+#secondary .textwidget .phonehome {
+	margin:25px auto;
+	width:210px;
+}
+
+#secondary .textwidget .phonehome ul {
+	list-style:none;
+	padding:0 0 0 90px;
+	margin:0;
+}
+
+#secondary .textwidget .phonehome h4,#secondary .textwidget .phonehome h3,#secondary .textwidget .phonehome p {
+	font-size:1.6em;
+}
+
+/*
+==========================================================
+ Signmeup Page
+==========================================================
+*/
+#brief-content {
+	padding-left:150px;
+}
+
+#brief-content .main {
+	width:600px;
+}
+
+.signuppage {
+	float:right;
+	clear:left;
+}
+
+.imageleft {
+	float:left;
+}
+
+.signuppage p {
+	font-size:1.6em;
+	clear:both;
+}
+
+.signuppage #mc_embed_signup form {
+	width:255px;
+	margin:0;
+	padding:0;
+}
+
+.signuppage input {
+	height:25px;
+	font-size:1em;
+	width:200px;
+	border:1px solid #68BBAF;
+	padding:0 0 0 5px;
+	margin:0 0 10px;
+	border-radius:1em;
+}
+
+.signuppage #mc_embed_signup form input {
+	width:220px;
+	margin:0 0 10px 5px;
+}
+
+.signuppage #mc_embed_signup .button {
+	width:120px;
+	background-color:#68BBAF;
+	color:#FFF;
+	height:28px;
+	font-size:1em;
+	text-transform:uppercase;
+	border-radius:1em;
+}
+
+.signuppage #mc_embed_signup .button:hover {
+	background:#A93439;
+	color:#FFF;
+}
+
+/*
+==========================================================
+ Footer
+==========================================================
+*/
+footer {
+	clear:both;
+	min-height: 250px;
+	width:1024px;
+	padding:30px 0;
+	  background:#818385;
+	margin:0 -9999rem 50px;
+	padding:10px 9999rem 50px;
+}
+
+footer p,footer ul {
+	color:#FFF;
+	font-family:'PT Sans',sans-serif;
+	font-weight:400;
+	font-size:1.2em;
+	line-height:1.5em;
+}
+
+footer li {
+	list-style:none;
+}
+
+footer a {
+	font-weight:400;
+}
+
+footer a:link,footer a:visited {
+	color:#FFF;
+}
+
+footer a:hover {
+	color:#68BBAF;
+	font-weight:400;
+}
+
+/*
+==========================================================
+ Footer Column 1
+==========================================================
+*/
+footer .column1 {
+	width:115px;
+	margin:0;
+	padding:0;
+}
+
+footer .column1 .footermenu {
+	float:left;
+	color:#fff;
+	text-transform:uppercase;
+}
+
+footer .column1 ul.footermenu {
+	list-style:none;
+	padding:0;
+}
+
+footer .column1 ul.footermenu li {
+	margin:0;
+	padding:0 0 4px;
+}
+
+/*
+==========================================================
+ Footer Column 2
+==========================================================
+*/
+footer .column2 {
+	float:left;
+	width:255px;
+	margin:0;
+}
+
+footer .column2 p {
+	padding:0;
+}
+
+footer .column2 ul.address {
+	list-style:none;
+	margin-left:0;
+	padding-left:0;
+}
+
+footer .column2 ul.address li {
+	list-style:none;
+	margin-left:0;
+	padding:0;
+}
+
+/*
+==========================================================
+ Footer Column 3
+==========================================================
+*/
+footer .column3 {
+	float:left;
+	text-align:center;
+	padding-left:0;
+	width:260px;
+}
+
+footer .column3 p {
+	float:left;
+	text-align:center;
+	width:260px;
+}
+
+footer ul.social {
+	float:left;
+	margin:0 0 10px 25px;
+	padding:0;
+}
+
+footer ul.social li {
+	float:left;
+	display:block;
+	margin-right:11px;
+	height:35px;
+	width:35px;
+}
+
+footer ul.social li.last {
+	margin-right:0;
+}
+
+footer ul.social a {
+	height:35px;
+	width:35px;
+	display:block;
+}
+
+footer .social a.linkedin:link,footer .social a.linkedin:visited {
+	background:url(images/linkedin.gif) no-repeat;
+}
+
+footer .social a.linkedin:hover {
+	background:url(images/linkedin_on.gif) no-repeat;
+}
+
+footer .social a.twitter:link,footer .social a.twitter:visited {
+	background:url(images/twitter.gif) no-repeat;
+}
+
+footer .social a.twitter:hover {
+	background:url(images/twitter_on.gif) no-repeat;
+}
+
+footer .social a.facebook:link,footer .social a.facebook:visited {
+	background:url(images/facebook.gif) no-repeat;
+}
+
+footer .social a.facebook:hover {
+	background:url(images/facebook_on.gif) no-repeat;
+}
+
+footer .social a.google:link,footer .social a.google:visited {
+	background:url(images/google.gif) no-repeat;
+}
+
+footer .social a.google:hover {
+	background:url(images/google_on.gif) no-repeat;
+}
+
+footer p.footerlogos img {
+	margin-right:3px;
+	border:none;
+}
+
+/*
+==========================================================
+ Footer Column 4
+==========================================================
+*/
+footer .column4 {
+	float:right;
+	width:335px;
+}
+
+footer .column4 img,footer .column4 p {
+	margin:10px 0;
+	padding:0;
+}
+
+footer .column4 p.copy {
+	margin:10px 0;
+	padding:0;
+}
+
+/*
+==========================================================
+ Mail Chimp
+==========================================================
+*/
+footer #mc_embed_signup form {
+	margin:0;
+	padding:0;
+	width:318px;
+}
+
+footer #mc_embed_signup form input {
+	height:22px;
+	width:185px;
+	border:1px solid #A93439;
+	padding:0 0 0 5px;
+	margin:0 0 10px;
+	border-radius:1em;
+}
+
+footer #mc_embed_signup .button {
+	width:auto;
+	background-color:#A93439;
+	height:24px;
+	text-transform:uppercase;
+	border-radius:1em;
+	text-align:center;
+	line-height:1em;
+	color:#FFF;
+	padding:0 5px;
+}
+
+footer #mc_embed_signup .button:hover {
+	background:#68BBAF;
+}

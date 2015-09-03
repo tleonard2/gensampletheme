@@ -1,0 +1,65 @@
+/*
+Theme Name: 	terrib
+Theme URI: http://wordpress.org/extend/themes/twentytwelve
+Description: 	Child theme to twentytwelve
+Version: 		1.2.1
+Author: 	FiddleFace
+Author URI: 	http://www.fiddleface.com
+Template:       twentytwelve
+Version:        0.1.0
+*/
+
+
+/*
+==========================================================
+  General Rules
+==========================================================
+*/
+
+body#tinymce {
+    background:#FFF;
+    font-size: 90%;
+}
+.alignleft,
+.left {
+	float: left;
+	margin: 15px 15px 10px 0px;
+}
+.alignright,
+.right {
+	float: right;
+	margin: 5px 0px 10px 15px;
+    border-left: 5px solid #FFF;
+}
+p {
+	font-size: 1.3em;
+	font-family: 'PT Sans', sans-serif;
+	font-weight: 400;
+	line-height: 1.5em;
+}
+p.red {
+	color: #A93439;
+	text-align: center;
+}
+h1,h2,h3,h4 {
+	font-family: 'lato', sans-serif;
+	font-weight: 400;
+	color: #492763;
+}
+h1 {
+	font-size: 2.25em;
+	line-height: 1.3em;
+	margin: 0 0 0.66667em 0;
+}
+body#tinymce.wp-editor h2 {
+    font-size: 2em;
+	line-height: 1.33333em;
+	margin: 1.06667em 0 0.53333em 0;
+}
+body#tinymce.wp-editor h3,
+body#tinymce.wp-editor span.h3 {
+	font-size: 1.6em;
+	line-height: 1.45455em;
+	margin: 1.45455em 0 0.72727em 0;
+}
+

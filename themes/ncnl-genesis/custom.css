@@ -1,0 +1,359 @@
+/*
+	Theme Name: NCNL Genesis Theme
+	Theme URI: http://my.studiopress.com/themes/beautiful/
+	Description: A mobile responsive and HTML5 theme built for the Genesis Framework.
+	Author: StudioPress
+	Author URI: http://www.studiopress.com/
+
+	Tags: black, orange, white, one-column, two-columns, fixed-width, custom-menu, full-width-template, sticky-post, theme-options, threaded-comments, translation-ready
+
+	Template: genesis
+	Template Version: 1.0.0
+
+	License: GPL-2.0+
+	License URI: http://www.opensource.org/licenses/gpl-license.php
+*/
+
+
+header.site-header {
+    display: none;
+}
+
+.before-header img.centered, .aligncenter {
+    display: block;
+    margin: 0 auto;
+}
+
+.clearfix:before {
+  clear:both;
+}
+
+.site-inner {
+    clear: both;
+    padding-top: 40px;
+}
+
+
+
+.entry-title {
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.page-id-2234 .entry-title,
+.page-id-2238 .entry-title,
+.parent-pageid-2238 .entry-title,
+.page-id-2243 .entry-title,
+.page-id-10613 .entry-title,
+.page-id-3665 .entry-title,
+.page-id-3672 .entry-title,
+.page-id-3679 .entry-title,
+.page-id-10662 .entry-title,
+.page-id-9967 .entry-title,
+.parent-pageid-4913 .entry-title,
+.parent-pageid-6583 .entry-title,
+.page-id-15651 .entry-title {
+  display:none;
+}
+
+a {
+    color: #00A1C8;
+    text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    line-height: 1.4;
+}
+
+.blue, h2  {
+    color: #00A1C8;
+	line-height: 1.4em;
+}
+
+.red {
+	font-size: 3em;
+	color: red;
+}
+
+blockquote:before {
+    content: none;
+}
+
+blockquote {
+    margin: 20px;
+}
+
+h3 strong {
+	font-weight: 400;
+}
+
+h3 {
+    font-size: 20px;
+}
+
+
+/* Signup box
+--------------------------------------------- */
+.product-item {
+	margin-top:0px;
+	border-top:1px dashed #1984D5;
+	padding-top:10px;
+    clear:both;
+}
+
+.product-item img {
+  float:left;
+	margin:10px;
+  padding-top:20px;
+}
+
+.one-third {
+  border: thin solid #EDEDED;
+  padding: 15px 15px 0 15px;
+  margin-bottom: 20px;
+  font-size: 80%;
+  min-height: 400px;
+}
+
+.one-third ul {
+  padding: 0px 15px 15px 15px;
+}
+
+.paypalbutton {
+  float:right;
+}
+
+/* Signup box
+--------------------------------------------- */
+
+table {
+  margin: 0px 0 10px 0;
+}
+
+td {
+  border-top: none;
+}
+
+tbody {
+  border-bottom: none;
+}
+
+/* Widgets
+--------------------------------------------- */
+.site-container .widget {
+ 	border:none;
+}
+
+.content-sidebar-wrap .widget {
+  border: thin solid #EDEDED;
+  padding: 15px 20px 10px 20px;
+}
+
+.sidebar .widget {
+    margin-bottom: 30px;
+}
+
+/* Primary Navigation
+--------------------------------------------- */
+
+.nav-primary {
+    background-color: #00A1C8;
+}
+
+.genericon-home:before {
+    content: "\f409";
+	font-size: 1.6em;
+}
+
+.genericon-home {
+	color: #FFF;
+}
+
+.genericon:hover,
+li.current-menu-item .genericon-home {
+	 color: #D2E10A;
+}
+
+/*
+Site Navigation
+---------------------------------------------------------------------------------------------------- */
+
+.genesis-nav-menu {
+    color: #FFF;
+}
+
+.genesis-nav-menu a {
+    color: #FFF;
+    display: block;
+    font-size: 16px;
+    letter-spacing: 4px;
+    padding: 20px;
+    position: relative;
+}
+
+.genesis-nav-menu a:hover,
+.genesis-nav-menu .current-menu-item > a,
+.genesis-nav-menu .sub-menu .current-menu-item > a:hover {
+    color: #D2E10A;
+}
+
+.genesis-nav-menu .sub-menu .current-menu-item > a {
+    color: #FFF;
+}
+
+.genesis-nav-menu .sub-menu a {
+    background-color: #00A1C8;
+}
+
+/*
+==========================================================
+ dropdown navigation
+==========================================================
+*/
+.one-half {
+  border: thin solid #EDEDED;
+  padding: 20px 20px 0 20px;
+  margin-bottom: 20px;
+}
+
+.dropdownnav {
+	overflow:auto;
+}
+
+.dropdownnav ul {
+	float:left;
+	padding:.5em 0;
+}
+
+/*
+==========================================================
+ main and dropdown
+==========================================================
+*/
+.dropdownnav ul ul {
+	float:left;
+	font:1.5em;
+	background:#fff;
+	border:thin solid #B1D226;
+	padding-left: 10px;
+}
+
+/*
+==========================================================
+ dropdown width
+==========================================================
+*/
+.dropdownnav ul li ul {
+	position:absolute;
+	left:-999em;
+	width:30em;
+	height:250px;
+	overflow:scroll;
+}
+
+.dropdownnav ul li:hover ul ul,.dropdownnav ul li.sfhover ul ul {
+	left:-999em;
+}
+
+.dropdownnav ul li:hover ul,.dropdownnav ul li li:hover ul,.dropdownnav ul li.sfhover ul,.dropdownnav ul li li.sfhover ul {
+	left:auto;
+}
+
+/*
+============================
+-- buy box
+============================
+*/
+.yellowbox {
+	margin:20px 10px;
+	background:#F90;
+	-moz-border-radius:20px;
+	-webkit-border-radius:20px;
+	-khtml-border-radius:20px;
+	border-radius:20px;
+	border:2px solid #9B130B;
+	padding:10px;
+	text-align:center;
+}
+
+.yellowbox h2 {
+	font-size:2em;
+	color:#FEFEE6;
+}
+
+.yellowbox h3 {
+	font-size:1.6em;
+	color:#000;
+}
+
+.yellowbox h4 {
+	font-size:1.6em;
+	color:#000;
+	padding:10px 0;
+}
+
+.yellowbox form.paypalbutton {
+	width:450px;
+	margin-bottom:10px;
+}
+
+.yellowbox form.paypalbutton input {
+	width:150px;
+	margin:0 auto;
+}
+
+.yellowbox img {
+	float:left;
+	margin:0 20px;
+}
+
+/*
+============================
+-- buy box
+============================
+*/
+.box {
+	width: 100%;
+}
+
+.leftbox {
+margin-bottom: 50px;
+border: 1px solid #ededed;
+		width: 100%;
+  padding: 20px;
+}
+
+.leftbox h2 {
+	font-size:2.4em;
+	color:#9B130B;
+}
+
+ul.features {
+	padding-left:0px;
+  display: table;
+}
+.features li {
+	list-style-type: none;
+  padding-bottom: 30px;
+}
+
+.features li::before {
+    padding: 10px 0px;
+	content: '\f418';
+    display: inline-block;
+    -webkit-font-smoothing: antialiased;
+    font: normal 30px/1 'Genericons';
+    vertical-align: text-top;
+    color:#9B130B;
+      display: table-cell; /* aha! */
+    text-align: right;
+}
+
+ul > li {
+    display: table-row;
+}
+
+.ap-plugin-link-wrapper,
+body.page-template-articles-page .entry-meta {
+  display:none;
+}
