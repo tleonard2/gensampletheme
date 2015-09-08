@@ -84,11 +84,7 @@ h1.bannerline {
 	margin:10px 40px 0 0;
 }
 
-h1.tagname {
-	color:#A93439;
-	margin-bottom:20px;
-	text-align:center;
-}
+
 
 h2 {
 	font-size:2em;
@@ -130,14 +126,6 @@ ul li {
 
 a {
 	text-decoration:none;
-}
-
-a:link,a:visited {
-	color:#A93439;
-}
-
-a:hover {
-	color:#005C6E;
 }
 
 .left,.alignleft {
@@ -187,57 +175,49 @@ header {
 nav {
 	text-transform:uppercase;
 	font-size:1.4em;
-	height:132px;
-	width:845px;
 	font-family:'PT Sans',sans-serif;
-	margin:0 auto;
 }
 
-nav ul.nav-menu {
-	width:845px;
-	padding:0;
-	margin:0 auto;
-}
-
-nav ul.nav-menu li {
-	margin:60px 0 15px;
-	float:left;
-	display:block;
-	padding:0;
-}
-
-nav ul.nav-menu li a {
-	margin:0 15px;
-	text-decoration:none;
-	display:block;
-}
-
-nav ul.nav-menu li.menu-item-36 {
-	margin:0;
+.nav-primary ul.genesis-nav-menu li.menu-item-597 a {
+	min-width: 150px;
+	min-height: 112px;
 	background:url(images/logo.png) no-repeat;
 	text-indent:-9999px;
 }
 
-nav ul.nav-menu li.menu-item-36 a {
-	height:112px;
-	width:100px;
-}
-
-#container nav li.menu-item-30 a,#container nav li.menu-item-29 a,#container nav li.menu-item-32 a {
-	margin:0 17px;
-}
-
-#container nav li.menu-item-177 a {
-	margin-right:10px;
-	padding:0;
-}
-
-nav ul.nav-menu li a:link,nav ul.nav-menu li a:visited {
+.genesis-nav-menu li a:link {
 	color:#888A8C;
 }
 
-nav ul.nav-menu li a:hover,nav ul.nav-menu li.current_page_item a,nav ul.nav-menu li.active a {
+.genesis-nav-menu .current-menu-item > a {
 	color:#A93439;
+	background: none;
+}
+
+.genesis-nav-menu li:hover {
+	background: none;
+}
+
+/*
+==========================================================
+  Home Top Tagline
+==========================================================
+*/
+.home-top .tagname {
+    float: none;
+    padding: 0 2.8%;
+    width: 100%;
+	text-align: center;
+}
+
+.home-top .tagname h1 {
+    float: none;
+	margin: 0 auto 20px auto;
+	color:#A93439;
+}
+
+.home-top h4 {
+    display: none;
 }
 
 /*
@@ -255,74 +235,34 @@ nav ul.nav-menu li a:hover,nav ul.nav-menu li.current_page_item a,nav ul.nav-men
   Content - Home
 ==========================================================
 */
-#content .mktgbuttons,#content .infobuttons {
+.home-top .infobuttons {
 	width:100%;
 }
 
-#content .mktgbuttons ul {
-	float:left;
-	margin:0;
-	padding:0;
-	margin-bottom:10px;
-}
-
-#content .mktgbuttons li {
-	float:left;
-	display:block;
-	margin-right:15px;
-	padding:0;
-	text-align:center;
-}
-
-#content .mktgbuttons li.advice {
-	margin-right:0;
-}
-
-#content .mktgbuttons li a {
-	width:320px;
-	display:block;
-	height:160px;
-}
-
-#content li.mktg a:link,#content li.mktg a:visited {
+.home-top .mktg {
 	background:url(images/mktgthatwks.jpg) no-repeat;
+	min-height:160px;
 }
 
-#content li.mktg a:hover {
-	background:url(images/mktgthatwks_on.jpg) no-repeat;
-}
-
-#content li.biz a:link,#content li.biz a:visited {
+.home-top .biz {
 	background:url(images/bizthatgrow.jpg) no-repeat;
+	min-height:160px;
 }
 
-#content li.biz a:hover {
-	background:url(images/bizthatgrow_on.jpg) no-repeat;
-}
-
-#content li.advice a:link,#content li.advice a:visited {
+.home-top .advice {
 	background:url(images/advicethatpays.jpg) no-repeat;
-	margin-right:0;
+	min-height:160px;
 }
 
-#content li.advice a:hover {
-	background:url(images/advicethatpays_on.jpg) no-repeat;
-	margin-right:0;
-}
-
-#content .mktgbuttons li a {
-	text-indent: -9999px;
-}
-
-#content .mktgbuttons li a:link,#content .mktgbuttons li a:visited {
+.home-top a:link {
 	color:#492763;
 }
 
-#content .mktgbuttons li a:hover {
+.home-top a:hover {
 	color:#A93439;
 }
 
-#content .mktgbuttons span.secondline {
+.home-top span.secondline {
 	font-family:'PT Sans',sans-serif;
 	font-size:75%;
 	letter-spacing:0;
