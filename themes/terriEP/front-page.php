@@ -37,9 +37,19 @@ function executive_home_sections() {
 		'after'  => '</div>',
 	) );
 
+	genesis_widget_area( 'mktgbuttons', array(
+		'before' => '<div class="mktgbuttons widget-area"><div class="wrap">',
+		'after'  => '</div></div>',
+	) );
+
 	genesis_widget_area( 'home-middle', array(
 		'before' => '<div class="home-middle widget-area">',
 		'after'  => '</div>',
+	) );
+
+	genesis_widget_area( 'infobuttons', array(
+		'before' => '<div class="infobuttons widget-area"><div class="wrap">',
+		'after'  => '</div></div>',
 	) );
 
 	genesis_widget_area( 'home-testimonial', array(

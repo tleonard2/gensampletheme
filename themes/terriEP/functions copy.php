@@ -27,7 +27,7 @@ function executive_load_scripts() {
 
 	wp_enqueue_style( 'dashicons' );
 
-	wp_enqueue_style( 'google-font', '//fonts.googleapis.com/css?family=PT+Sans:400,400italic,700,700italic|Lato:300,700,300italic', array(), CHILD_THEME_VERSION );
+	wp_enqueue_style( 'google-font', '//fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700', array(), CHILD_THEME_VERSION );
 
 }
 
@@ -69,37 +69,126 @@ function executive_load_admin_styles() {
 
 }
 
-
-//* Reposition the primary navigation menu
-remove_action( 'genesis_after_header', 'genesis_do_nav' );
-add_action( 'genesis_header', 'genesis_do_nav' );
-
-//* ----------------- Header -------------------------
+//* ----------------- Unregister or Remove -------------------------
 
 
 //* Add new image sizes
 add_image_size( 'featured', 300, 100, TRUE );
 add_image_size( 'portfolio', 300, 200, TRUE );
-add_image_size( 'slider', 1200, 445, TRUE );
+add_image_size( 'slider', 1140, 445, TRUE );
 
+//* Add support for custom background
+add_theme_support( 'custom-background' );
 
-// Hook site header banner after header
-add_action( 'genesis_header', 'site_header_banner',20 );
-function site_header_banner() {
-	echo '<div class="site-header-banner"><img src="' . get_stylesheet_directory_uri() . '/images/banner.jpg" alt="Take your business &amp; your life to the
-next level with small business coaching" /></div>';
+//* Add support for custom header
+add_theme_support( 'custom-header', array(
+	'width'           => 260,
+	'height'          => 100,
+	'header-selector' => '.site-title a',
+	'header-text'     => false
+) );
+
+//* Create Portfolio Type custom taxonomy
+add_action( 'init', 'executive_type_taxonomy' );
+function executive_type_taxonomy() {
+
+	register_taxonomy( 'portfolio-type', 'portfolio',
+		array(
+			'labels' => array(
+				'name'          => _x( 'Types', 'taxonomy general name', 'executive' ),
+				'add_new_item'  => __( 'Add New Portfolio Type', 'executive' ),
+				'new_item_name' => __( 'New Portfolio Type', 'executive' ),
+			),
+			'exclude_from_search' => true,
+			'has_archive'         => true,
+			'hierarchical'        => true,
+			'rewrite'             => array( 'slug' => 'portfolio-type', 'with_front' => false ),
+			'show_ui'             => true,
+			'show_tagcloud'       => false,
+		)
+	);
+
+}
+
+//* Create portfolio custom post type
+add_action( 'init', 'executive_portfolio_post_type' );
+function executive_portfolio_post_type() {
+
+	register_post_type( 'portfolio',
+		array(
+			'labels' => array(
+				'name'          => __( 'Portfolio', 'executive' ),
+				'singular_name' => __( 'Portfolio', 'executive' ),
+			),
+			'has_archive'  => true,
+			'hierarchical' => true,
+			'menu_icon'    => get_stylesheet_directory_uri() . '/lib/icons/portfolio.png',
+			'public'       => true,
+			'rewrite'      => array( 'slug' => 'portfolio', 'with_front' => false ),
+			'supports'     => array( 'title', 'editor', 'author', 'thumbnail', 'excerpt', 'trackbacks', 'custom-fields', 'revisions', 'page-attributes', 'genesis-seo', 'genesis-cpt-archives-settings' ),
+			'taxonomies'   => array( 'portfolio-type' ),
+
+		)
+	);
+
+}
+
+//* Add Portfolio Type Taxonomy to columns
+add_filter( 'manage_taxonomies_for_portfolio_columns', 'executive_portfolio_columns' );
+function executive_portfolio_columns( $taxonomies ) {
+
+    $taxonomies[] = 'portfolio-type';
+    return $taxonomies;
+
 }
 
 
-// Remove the header right widget area
-unregister_sidebar( 'header-right' );
+//* Reposition the secondary navigation menu
+remove_action( 'genesis_after_header', 'genesis_do_subnav' );
+add_action( 'genesis_footer', 'genesis_do_subnav', 7 );
 
+//* Reduce the secondary navigation menu to one level depth
+add_filter( 'wp_nav_menu_args', 'executive_secondary_menu_args' );
+function executive_secondary_menu_args( $args ){
 
+	if( 'secondary' != $args['theme_location'] )
+	return $args;
+
+	$args['depth'] = 1;
+	return $args;
+
+}
+
+//* Relocate the post info
+remove_action( 'genesis_entry_header', 'genesis_post_info', 12 );
+add_action( 'genesis_entry_header', 'genesis_post_info', 5 );
+
+//* Change the number of portfolio items to be displayed (props Bill Erickson)
+add_action( 'pre_get_posts', 'executive_portfolio_items' );
+function executive_portfolio_items( $query ) {
+
+	if( $query->is_main_query() && !is_admin() && is_post_type_archive( 'portfolio' ) ) {
+		$query->set( 'posts_per_page', '12' );
+	}
+
+}
+
+//* Customize Portfolio post info and post meta
+add_filter( 'genesis_post_info', 'executive_portfolio_post_info_meta' );
+add_filter( 'genesis_post_meta', 'executive_portfolio_post_info_meta' );
+function executive_portfolio_post_info_meta( $output ) {
+
+     if( 'portfolio' == get_post_type() )
+        return '';
+
+    return $output;
+
+}
 
 //* ----------------- Widgets -------------------------
 
 //* Add support for 4-column footer widgets
-add_theme_support( 'genesis-footer-widgets', 3 );
+add_theme_support( 'genesis-footer-widgets', 4 );
 
 //* Add support for after entry widget
 add_theme_support( 'genesis-after-entry-widget-area' );
@@ -120,22 +209,12 @@ genesis_register_sidebar( array(
 	'description' => __( 'This is the top section of the home page.', 'executive' ),
 ) );
 genesis_register_sidebar( array(
-	'id'          => 'mktgbuttons',
-	'name'        => __( 'Marketing Buttons', 'executive' ),
-	'description' => __( 'This is the top button section of the home page.', 'executive' ),
-) );
-genesis_register_sidebar( array(
 	'id'          => 'home-middle',
 	'name'        => __( 'Home - Middle', 'executive' ),
 	'description' => __( 'This is the middle section of the home page.', 'executive' ),
 ) );
 genesis_register_sidebar( array(
-	'id'          => 'infobuttons',
-	'name'        => __( 'Info Buttons', 'executive' ),
-	'description' => __( 'This is the middle section of the home page.', 'executive' ),
-) );
-genesis_register_sidebar( array(
 	'id'          => 'home-testimonial',
-	'name'        => __( 'Home Testimonial', 'executive' ),
+	'name'        => __( 'Home - Testimonial', 'executive' ),
 	'description' => __( 'This is the testimonial section on the home page.', 'executive' ),
 ) );
