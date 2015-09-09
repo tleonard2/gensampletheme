@@ -357,7 +357,7 @@ a {
 */
 .home .quotebox {
   	background:#F0F0F0;
-	margin:30px -9999rem 10px;
+	margin:30px -9999rem 40px;
 	padding:10px 9999rem 10px;
 }
 
@@ -1053,21 +1053,21 @@ footer.entry-meta {
 .footer-widgets {
 	min-height: 250px;
 	background:#818385;
-	margin:0 -9999rem 50px;
-	padding:10px 9999rem 50px;
+	margin:0 -9999rem 20px;
+	padding:10px 9999rem 0px;
 	line-height: 1.4;
+	font-size: 1.2em;
+	color: #FFF;
 }
 
 .footer-widgets h4 {
-	font-size: 80%;
+	font-size: 1em;
 	color: #FFF;
 	margin: 0 0 10px;
 	padding: 0;
 }
 
 .footer-widgets li {
-	font-size: 80%;
-	color: #FFF;
 	list-style:none;
 	padding-bottom: 10px;
 }
@@ -1130,10 +1130,20 @@ footer.entry-meta {
  Footer Column 2
 ==========================================================
 */
-.footer-widgets .footerlogos {
+.footer-widgets .footer-widgets-2 h4.widget-title {
 	text-align: center;
 }
 
+.footer-widgets .footerlogos {
+	text-align: center;
+	max-width: 260px;
+	margin: 0 auto;
+}
+
+.footer-widgets .footerlogos .wp-image-624 {
+	width: 125px;
+	margin: 0 auto;
+}
 .footer-widgets .footerlogos h4.widget-title {
 	display:none;
 }
@@ -1147,8 +1157,12 @@ footer.entry-meta {
  Mail Chimp
 ==========================================================
 */
+.footer-widgets .footer-widgets-3 h4.widget-title {
+	display: none;
+}
+
 .footer-widgets #mc_embed_signup form {
-	margin:0;
+	margin:10px 0 0 0;
 	padding:0;
 	width:318px;
 }
@@ -1157,9 +1171,10 @@ footer.entry-meta {
 	height:22px;
 	width:185px;
 	border:1px solid #A93439;
-	padding:0 0 0 5px;
+	padding:0 0 0 15px;
 	margin:0 0 10px;
 	border-radius:1em;
+	font-size: 1em;
 }
 
 .footer-widgets #mc_embed_signup .button {

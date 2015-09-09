@@ -31,6 +31,8 @@ function executive_load_scripts() {
 
 }
 
+
+
 //* ----------------- Unregister or Remove -------------------------
 
 //* Unregister layout settings
@@ -86,6 +88,10 @@ add_image_size( 'slider', 1200, 445, TRUE );
 // Hook site header banner after header
 add_action( 'genesis_header', 'site_header_banner',20 );
 function site_header_banner() {
+
+		if ( ! is_front_page() || get_query_var( 'paged' ) >= 2 )
+		return;
+
 	echo '<div class="site-header-banner"><img src="' . get_stylesheet_directory_uri() . '/images/banner.jpg" alt="Take your business &amp; your life to the
 next level with small business coaching" /></div>';
 }

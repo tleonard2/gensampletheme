@@ -10,7 +10,7 @@ function executive_theme_defaults( $defaults ) {
 	$defaults['content_archive_thumbnail'] = 0;
 	$defaults['image_alignment']           = 'alignleft';
 	$defaults['posts_nav']                 = 'numeric';
-	$defaults['site_layout']               = 'content-sidebar';
+	$defaults['site_layout']               = 'sidebar-content';
 
 	return $defaults;
 
@@ -23,15 +23,15 @@ function executive_theme_setting_defaults() {
 	if( function_exists( 'genesis_update_settings' ) ) {
 
 		genesis_update_settings( array(
-			'blog_cat_num'              => 5,	
+			'blog_cat_num'              => 5,
 			'content_archive'           => 'full',
 			'content_archive_limit'     => 0,
 			'content_archive_thumbnail' => 0,
 			'image_alignment'           => 'alignleft',
 			'posts_nav'                 => 'numeric',
-			'site_layout'               => 'content-sidebar',
+			'site_layout'               => 'sidebar-content',
 		) );
-		
+
 		genesis_update_settings( array(
 			'location_horizontal'             => 'left',
 			'location_vertical'               => 'top',
@@ -44,19 +44,19 @@ function executive_theme_setting_defaults() {
 			'slideshow_title_show'            => 1,
 			'slideshow_width'                 => '1140',
 		), GENESIS_RESPONSIVE_SLIDER_SETTINGS_FIELD );
-		
+
 	} else {
-		
+
 		_genesis_update_settings( array(
-			'blog_cat_num'              => 5,	
+			'blog_cat_num'              => 5,
 			'content_archive'           => 'full',
 			'content_archive_limit'     => 0,
 			'content_archive_thumbnail' => 0,
 			'image_alignment'           => 'alignleft',
 			'posts_nav'                 => 'numeric',
-			'site_layout'               => 'content-sidebar',
+			'site_layout'               => 'sidebar-content',
 		) );
-		
+
 		_genesis_update_settings( array(
 			'location_horizontal'             => 'left',
 			'location_vertical'               => 'top',
@@ -69,11 +69,11 @@ function executive_theme_setting_defaults() {
 			'slideshow_title_show'            => 1,
 			'slideshow_width'                 => '1140',
 		), GENESIS_RESPONSIVE_SLIDER_SETTINGS_FIELD );
-		
+
 	}
 
 	update_option( 'posts_per_page', 5 );
-	
+
 	flush_rewrite_rules( false );
 
 }
@@ -96,6 +96,6 @@ function executive_responsive_slider_defaults( $defaults ) {
 	);
 
 	$args = wp_parse_args( $args, $defaults );
-	
+
 	return $args;
 }

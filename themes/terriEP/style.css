@@ -600,12 +600,8 @@ Structure and Layout
 }
 
 .site-inner {
-    -moz-box-shadow: 0 0 0 1px #fff;
-    -webkit-box-shadow: 0 0 0 1px #fff;
-    background-color: #fff;
-    box-shadow: 0 0 0 1px #fff;
     clear: both;
-    margin: 0 auto;
+    margin: 70px auto;
     overflow: hidden;
 	max-width: 990px;
 }
@@ -1588,7 +1584,7 @@ Footer Widgets
 
 .footer-widgets .wrap {
     overflow: hidden;
-    padding: 60px 30px 30px;
+    padding: 10px 30px 0px;
 }
 
 .footer-widgets-1,
@@ -1608,7 +1604,7 @@ Footer Widgets
 }
 
 .footer-widgets .widget {
-    margin-bottom: 30px;
+    margin-bottom: 0px;
     word-wrap: break-word;
 }
 
@@ -1628,7 +1624,7 @@ Site Footer
 .site-footer {
     color: #222;
     font-size: 12px;
-    padding: 40px 0;
+    padding: 0px;
     text-align: center;
     text-transform: uppercase;
 }
