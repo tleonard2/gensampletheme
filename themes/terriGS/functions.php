@@ -160,3 +160,6 @@ genesis_register_sidebar( array(
 	'name'        => __( 'Home Testimonial', 'executive' ),
 	'description' => __( 'This is the testimonial section on the home page.', 'executive' ),
 ) );
+
+
+

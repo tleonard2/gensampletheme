@@ -594,8 +594,12 @@ th {
 
 .site-inner {
     clear: both;
-    padding-top: 70px auto;
+    padding-top: 50px auto;
 	margin-top: 110px;
+}
+
+.home .site-inner {
+	margin-top: 0px;
 }
 
 /* ## Column Widths and Positions
@@ -646,7 +650,7 @@ th {
 .sidebar-primary {
     float: right;
     width: 300px;
-	padding-top: 50px;
+	padding-top: 20px;
 }
 
 .sidebar-content .sidebar-primary,
@@ -1197,7 +1201,7 @@ Site Navigation
 
 .entry {
     margin-bottom: 40px;
-    padding: 50px 0px;
+    padding: 30px 0px;
 }
 
 .content .entry {
@@ -1423,11 +1427,10 @@ Site Footer
 ---------------------------------------------------------------------------------------------------- */
 
 .site-footer {
-    color: #222;
-    font-size: 12px;
+    color: #ccc;
+    font-size: 8px;
     padding: 0px;
     text-align: center;
-    text-transform: uppercase;
 }
 
 .site-footer a {

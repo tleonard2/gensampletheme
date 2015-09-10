@@ -2,13 +2,13 @@
 	Theme Name: TerriGS Theme
 	Author: FiddleFace Web Design
 	Author URI: http://fiddleface.com/
+	Version: 2.0.1.1
 
-	Version: 1.5
 	Template: genesis
-	Template Version: 2.1.2
+	Template Version: 2.2.0
 
 	License: GPL-2.0+
-	License URI: http://www.opensource.org/licenses/gpl-license.php
+	License URI: http://www.gnu.org/licenses/gpl-2.0.html
 */
 
 /*
@@ -17,11 +17,13 @@
 ==========================================================================
 */
 body {
-	background:url(images/seafoam-bokeh-2000x143px.jpg) no-repeat center 180px;
+	background:url(images/seafoam-bokeh-2000x143px.jpg) no-repeat center 185px;
 	font-size:62.5%;
 /* 1em = 10px */
 	line-height:1.5em;
 	color:#8A8C8E;
+	font-family: 'PT sans', 'Lato', sans-serif;
+	font-weight: 400;
 }
 
 p {
@@ -244,7 +246,7 @@ a {
 .infobuttons .phonehome {
 	background:#EFEFEF;
 	border-radius:1em;
-	padding:35px 5px 40px 30px;
+	padding:25px 5px 30px 30px;
 }
 
 .infobuttons .phonehome h3 {
@@ -415,25 +417,27 @@ a {
   Leftcol
 ==========================================================
 */
-.leftcol {
-	width:290px;
-	float:left;
-	margin-right:30px;
-}
 
-.leftcol .intro {
-	background:url(images/IntroText_Bubble.jpg) no-repeat;
+.sidebar .intro {
+	background:url(images/IntroText_Bubble.jpg) no-repeat center center;
 	height:auto;
-	padding:5px 5px 10px 10px;
-	margin:0 5px 0 0;
+	padding:0;
+	margin:-20px 5px 0 0;
 }
 
-.leftcol h3 {
-	padding:5px 5px 0 0;
-	margin:0 5px 0 0;
+.sidebar h3 {
+	padding:10px;
+	margin:0 20px;
+	font-size: 70%;
 }
 
-.about-page .quote {
+.sidebar .swirly {
+    margin-bottom: 0px;
+	padding: 10px;
+
+}
+
+.quote {
 	font-family:Georgia,serif;
 	font-style:italic;
 	line-height: 1.5;
@@ -442,7 +446,7 @@ a {
 	margin:0;
 }
 
-.about-page .colname {
+.colname {
 	text-align:right;
 	font-family:'PT Sans',sans-serif;
 	font-size:.85em;
@@ -450,43 +454,14 @@ a {
 	font-style: normal;
 }
 
-.about-page .colquotemarkb {
+.colquotemarkb {
 	margin:-5px 100px 0 0;
 	float:right;
 }
 
-.leftcol .colquotemarkblt {
-	margin:-35px 20px 0 90px;
-}
-
-.leftcol .sideswirly {
-	clear:both;
-	padding:0;
-	width:250px;
-	background:url(images/swirlbk.png) repeat-x left 0;
-	margin:0;
-}
-
-.leftcol .sideswirly img {
-	margin:5px 0 0 105px;
-	width:50px;
-	text-align:center;
-}
-
-.leftcol .widget {
-	margin-bottom:20px;
-}
-
-.leftcol h3 {
-	font-size:1.8em;
-	color:#492763;
-	line-height:1.5em;
-	margin:0 0 .53333em;
-	padding:0 15px 0 5px;
-}
-
-.leftcol .widget-title {
-	display:none;
+.colquotemarkblt {
+	margin:-35px 50px 0 90px;
+	float: right;
 }
 
 #text-2 {
@@ -498,49 +473,43 @@ a {
  Phone Left col
 ==========================================================
 */
-.leftcol .phonehome {
+.sidebar .phonehome {
 	background:#EFEFEF;
 	border-radius:1em;
-	padding:15px 5px 10px 10px;
-	margin:0 auto;
-	height:90px;
-	width:250px;
-	float:left;
+	padding:15px 5px 10px 0px;
+	height:150px;
+	width:270px;
+	margin:50px 5px 0 10px;
 }
 
-.leftcol .phonehome ul li {
-	list-style:none;
-	padding:0 0 2px 50px;
-	margin:0;
-}
-
-.leftcol .phonehome h3 {
+.sidebar .phonehome h3 {
 	color:#68BBAF;
 	margin:0;
 	padding:0;
 	line-height:0;
-	font-size:2.4em;
+	font-size:90%;
 	font-family:'PT Sans',sans-serif;
 }
 
-.leftcol .phonehome h4 {
+.sidebar .phonehome h4 {
 	color:#68BBAF;
 	margin:0;
-	padding:0;
-	font-size:2em;
+	padding:0 0 20px;
+	font-size:80%;
 	font-weight:400;
 	line-height:0;
 	font-family:'PT Sans',sans-serif;
 }
 
-.leftcol .phonehome p {
-	line-height:1.4em;
-	font-size:1.8em;
+.sidebar .phonehome p {
+	font-size:80%;
+	margin:0;
+	padding:0 0 20px;
 }
 
-.leftcol .phonehome img {
+.sidebar .phonehome img {
 	float:left;
-	margin:0 20px 0 5px;
+	margin:20px 10px 50px 15px;
 }
 
 /*
@@ -548,9 +517,17 @@ a {
   Contact page
 ==========================================================
 */
-p.contactaddress {
+.meetinperson .widget-title {
+	display: block;
+}
+
+.meetinperson {
+	font-size: 12px;
+}
+
+.meetinperson p.contactaddress {
 	padding-left:52px;
-	margin-top:-14px;
+	font-size: 70%;
 }
 
 /*
@@ -581,7 +558,7 @@ p.contactaddress {
 .midquote p.quote {
 	font-family:Georgia,serif;
 	font-style:italic;
-	font-size:1.6em;
+	font-size:1.3em;
 	padding:0 10px;
 	margin:0;
 }
@@ -599,7 +576,7 @@ p.contactaddress {
 	text-align:left;
 	font-family:'Lato',sans-serif;
 	font-style:normal;
-	font-size:1.4em;
+	font-size:1.3em;
 	color:#492763;
 	margin:5px 0 0;
 	padding:0 30px 0 0;
@@ -641,27 +618,29 @@ p.contactaddress {
 ==========================================================
 */
 .rightcol .signupbox,
-.leftcol .signupbox {
+.sidebar .signupbox {
 	background:#A93439;
 	border-radius:1em;
 	width:210px;
 	color:#FFF;
-	padding:5px 5px 10px 10px;
+	padding:15px 5px 100px 10px;
 	font-size:1.2em;
+	line-height: 1.5;
 	margin:0 auto;
 	height:auto;
 }
 
-.leftcol .signupbox {
+.sidebar .signupbox {
 	background:#A93439;
 	border-radius:1em;
-	width:250px;
+	width:270px;
 	color:#FFF;
-	margin:20px 10px 0 0;
+	margin:20px 5px 0 10px;
+	font-size: 80%;
 }
 
-.rightcol .signupbox img.freebie,
-.leftcol .signupbox img.freebie {
+.rightcol .signupbox img,
+.sidebar .signupbox img.freebie {
 	float:right;
 	margin:-30px 7px 0 5px;
 }
@@ -672,54 +651,53 @@ p.contactaddress {
 ==========================================================
 */
 .rightcol .signupbox #mc_embed_signup form,
-.leftcol .signupbox #mc_embed_signup form {
-	width:205px;
+.sidebar .signupbox #mc_embed_signup form {
+	width:200px;
 	margin:0;
 	padding:0;
 }
 
-.leftcol .signupbox #mc_embed_signup form {
+.sidebar .signupbox #mc_embed_signup form {
 	width:255px;
 }
 
 .rightcol .signupbox #mc_embed_signup input,
-.leftcol .signupbox #mc_embed_signup input {
+.sidebar .signupbox #mc_embed_signup input {
 	height:25px;
-	font-size:1em;
-	width:200px;
+	font-size:80%;
+	width:195px;
 	border:1px solid #68BBAF;
 	padding:0 0 0 5px;
-	margin:0 0 10px;
+	margin:10px 0 0;
 	border-radius:1em;
 }
 
-.leftcol .signupbox #mc_embed_signup form input {
+.sidebar .signupbox #mc_embed_signup form input {
 	width:220px;
 	margin:0 0 10px 5px;
+	font-size: 70%;
 }
 
 .rightcol .signupbox #mc_embed_signup .button,
-.leftcol .signupbox #mc_embed_signup .button {
-	width:auto;
+.sidebar .signupbox #mc_embed_signup .button {
+	width:100px;
 	background-color:#68BBAF;
 	color:#FFF;
 	height:22px;
-	font-size:1em;
-	margin:0;
-	text-transform:uppercase;
+	font-size:80%;
 	border-radius:1em;
 	text-align:center;
-	margin:0 0 0 50px;
+	margin:0px auto;
 	padding:0 5px;
 }
 
 .rightcol .signupbox #mc_embed_signup .button:hover,
-.leftcol .signupbox #mc_embed_signup .button:hover {
+.sidebar .signupbox #mc_embed_signup .button:hover {
 	background:#FFF;
 	color:#A93439;
 }
 
-.leftcol .signupbox #mc_embed_signup .button {
+.sidebar .signupbox #mc_embed_signup .button {
 	margin:0 0 0 70px;
 }
 
@@ -747,54 +725,46 @@ p.contactaddress {
  Phone Right Col
 ==========================================================
 */
-.phonehome {
+.rightcol .phonehome {
 	background:#EFEFEF;
 	border-radius:1em;
-	padding:25px 5px 10px 10px;
-	margin:0 auto;
-	height:90px;
-}
-
-.rightcol .phonehome {
+	padding:5px 5px 10px 10px;
+	height:140px;
 	margin:25px auto;
 	width:210px;
 }
 
-.rightcol .phonehome ul {
-	list-style:none;
-	padding:0 0 0 90px;
-	margin:0;
-}
-
-.rightcol .phonehome ul li {
-	list-style:none;
-	margin:0;
+.rightcol .phonehome p {
+	line-height:1;
+	margin:15px 0 10px;
+	padding:0;
 }
 
 .rightcol .phonehome h3 {
 	color:#68BBAF;
-	margin:0;
+	margin:5px 15px 10px;
 	padding:0;
-	line-height:0;
-	font-size:2.4em;
+	line-height:1;
+	font-size:1.6em;
+	float: right;
 	font-family:'PT Sans',sans-serif;
 }
 
 .rightcol .phonehome h4 {
 	color:#68BBAF;
 	background: none;
-	margin:0;
+	margin:15px 0 15px;
 	padding:0;
 	font-weight:400;
-	line-height:0;
-	font-size: 1em;
+	font-size: 1.6em;	line-height:1;
 	font-family:'PT Sans',sans-serif;
 }
 
 .rightcol .phonehome img {
 	float:left;
-	margin:0 20px 0 0;
+	margin:30px 10px 0px 0;
 	padding:0;
+	max-width: 80px;
 }
 
 /*
@@ -844,10 +814,21 @@ h1.archive-title {
 }
 
 .entry-content ul,.blog-entry-content ul,article ul {
-	font-size:1.3em;
+	font-size:1.4em;
 	font-weight:400;
 	line-height:1em;
 	margin:0;
+}
+.entry-content ol {
+	font-size:1.4em;
+	font-weight:300;
+	line-height:1.5em;
+	margin:10px;
+	padding-left: 50px;
+}
+
+.entry-content ol li {
+	margin-bottom: 10px;
 }
 
 .entry-content ul ul,.blog-entry-content ul ul,article ul ul {
@@ -1164,4 +1145,10 @@ footer.entry-meta {
 
 .footer-widgets #mc_embed_signup .button:hover {
 	background:#68BBAF;
+}
+
+.footer-widgets .footer-widgets-3 p {
+	font-size: 1em;
+	margin-bottom: 10px;
+	padding: 0;
 }
