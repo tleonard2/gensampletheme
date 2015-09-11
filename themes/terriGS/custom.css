@@ -636,7 +636,7 @@ a {
 	width:270px;
 	color:#FFF;
 	margin:20px 5px 0 10px;
-	font-size: 80%;
+	font-size: 70%;
 }
 
 .rightcol .signupbox img,
@@ -772,17 +772,11 @@ a {
  Blog Content
 ==========================================================
 */
-#blog-content {
-	padding:0 0 0 20px;
-	font-family:'PT Sans',sans-serif;
-}
 
-#blog-content red {
-	color:#A93439;
-}
-
-.blog header.entry-header {
-	width:740px;
+.blog header.entry-header,
+.single header.entry-header,
+.archive header.entry-header {
+	text-align: left;
 	margin:0 auto;
 }
 
@@ -805,15 +799,33 @@ a {
 	padding:0;
 }
 
-.blog h1.entry-title {
-	width:740px;
+.blog .entry-title,
+.single .entry-title,
+.archive .entry-title {
+	color: #A93439;
+	font-size: 2.6em;
+	text-align: left;
+}
+
+.blog .content-sidebar-wrap .entry-title,
+.single .content-sidebar-wrap .entry-title,
+.archive .content-sidebar-wrap .entry-title {
+	display: none;
+}
+
+.blog .content-sidebar-wrap article .entry-title,
+.single .content-sidebar-wrap article .entry-title,
+.archive .content-sidebar-wrap article .entry-title {
+	display: block;
 }
 
 h1.archive-title {
 	color:#024FB2;
 }
 
-.entry-content ul,.blog-entry-content ul,article ul {
+.entry-content ul,
+.blog-entry-content ul,
+article ul {
 	font-size:1.4em;
 	font-weight:400;
 	line-height:1em;
@@ -831,7 +843,9 @@ h1.archive-title {
 	margin-bottom: 10px;
 }
 
-.entry-content ul ul,.blog-entry-content ul ul,article ul ul {
+.entry-content ul ul,
+.blog-entry-content ul ul,
+article ul ul {
 	font-size:1em;
 	font-weight:400;
 	line-height:1em;
@@ -885,55 +899,49 @@ footer.entry-meta {
  Blog right Col
 ==========================================================
 */
-#secondary {
-	padding:0 20px 0 0;
-	float:right;
-	width:210px;
+.sidebar .recentposts,
+.sidebar .categorylist,
+.sidebar .archivelist {
+	margin: 20px;
+	padding-left: 20px;
 }
 
-#secondary ul {
-	margin:0;
-	padding:0 0 0 20px;
-	font-size:1.2em;
+.blog .sidebar h3.widget-title {
+	display: block;
 }
 
-#secondary li {
-	padding:0;
+.sidebar .recentposts .widget-title,
+.sidebar .categorylist .widget-title,
+.sidebar .archivelist .widget-title {
+	display: block;
+	font-size: 80%;
+	margin: 0;
+}
+
+.blog .sidebar .phonehome .widget-title,
+.blog .sidebar .signupbox .widget-title{
+	display: none;
+}
+
+.sidebar .recentposts ul,
+.sidebar .categorylist ul,
+.sidebar .archivelist ul {
 	margin:0;
+padding-left: 20px;
+}
+
+.sidebar .recentposts li,
+.sidebar .categorylist li,
+.sidebar .archivelist li {
+	margin:0;
+	padding-left: 0px;
 	text-transform:capitalize;
+	border-bottom: none;
+	font-size: 60%;
+	line-height: 1.2;
 }
 
-#secondary input {
-	height:20px;
-}
 
-/*
-==========================================================
- Phone Right Col
-==========================================================
-*/
-.textwidget .phonehome {
-	background:#EFEFEF;
-	border-radius:1em;
-	padding:25px 5px 10px 10px;
-	margin:20px auto;
-	height:90px;
-}
-
-#secondary .textwidget .phonehome {
-	margin:25px auto;
-	width:210px;
-}
-
-#secondary .textwidget .phonehome ul {
-	list-style:none;
-	padding:0 0 0 90px;
-	margin:0;
-}
-
-#secondary .textwidget .phonehome h4,#secondary .textwidget .phonehome h3,#secondary .textwidget .phonehome p {
-	font-size:1.6em;
-}
 
 /*
 ==========================================================

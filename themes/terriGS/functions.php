@@ -31,28 +31,30 @@ function executive_load_scripts() {
 }
 
 
-
-
 //* ----------------- Move Entry Header -------------------------
 
-//* Remove the entry header markup (requires HTML5 theme support)
+function remove_entry_headers_genesis() {
+if ( is_page() && !is_archive() && !is_page_template('page_blog.php') || $post->post_parent ) {
 remove_action( 'genesis_entry_header', 'genesis_entry_header_markup_open', 5 );
 remove_action( 'genesis_entry_header', 'genesis_entry_header_markup_close', 15 );
-
-//* Remove the entry title (requires HTML5 theme support)
 remove_action( 'genesis_entry_header', 'genesis_do_post_title' );
+}}
+
+add_action( 'genesis_before_content', 'remove_entry_headers_genesis' );
+
 
 //* Add the entry header markup and entry title before the content on all pages except the front page
 add_action( 'genesis_before_content', 'jw_add_entry_header' );
 function jw_add_entry_header()
 {
-	if (is_front_page()) {
+	if (is_front_page() && !is_archive() && !is_page_template('page_blog.php') || $post->post_parent ) {
 		return;
 	}
 	genesis_entry_header_markup_open();
 	genesis_do_post_title();
 	genesis_entry_header_markup_close();
 }
+
 
 
 //* ----------------- Header -------------------------
@@ -121,20 +123,13 @@ remove_action( 'genesis_after_header', 'genesis_do_nav' );
 add_action( 'genesis_header', 'genesis_do_nav' );
 
 
-
-
-
 //* ----------------- Widgets -------------------------
 
 //* Add support for 3-column footer widgets
 add_theme_support( 'genesis-footer-widgets', 3 );
 
+
 //* Register widget areas
-genesis_register_sidebar( array(
-	'id'          => 'home-slider',
-	'name'        => __( 'Home - Slider', 'executive' ),
-	'description' => __( 'This is the slider section on the home page.', 'executive' ),
-) );
 genesis_register_sidebar( array(
 	'id'          => 'home-top',
 	'name'        => __( 'Home - Top', 'executive' ),

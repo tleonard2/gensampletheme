@@ -14,7 +14,7 @@ add_action( 'genesis_meta', 'gensample_home_genesis_meta' );
  */
 function gensample_home_genesis_meta() {
 
-	if ( is_active_sidebar( 'home-slider' ) || is_active_sidebar( 'home-top' ) || is_active_sidebar( 'home-cta' ) || is_active_sidebar( 'home-middle' ) ) {
+	if ( is_active_sidebar( 'home-top' ) || is_active_sidebar( 'home-cta' ) || is_active_sidebar( 'home-middle' ) ) {
 
 		remove_action( 'genesis_loop', 'genesis_do_loop' );
 		add_action( 'genesis_loop', 'gensample_home_sections' );
@@ -26,11 +26,6 @@ function gensample_home_genesis_meta() {
 }
 
 function gensample_home_sections() {
-
-	genesis_widget_area( 'home-slider', array(
-		'before' => '<div class="home-slider widget-area">',
-		'after'  => '</div>',
-	) );
 
 	genesis_widget_area( 'home-top', array(
 		'before' => '<div class="home-top widget-area">',

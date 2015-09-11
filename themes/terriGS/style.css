@@ -598,6 +598,12 @@ th {
 	margin-top: 110px;
 }
 
+.blog .site-inner,
+.single .site-inner,
+.archive .site-inner  {
+	margin-top: 200px;
+}
+
 .home .site-inner {
 	margin-top: 0px;
 }
@@ -629,6 +635,13 @@ th {
     width: 660px;
 }
 
+.blog .content,
+.single .content,
+.archive .content  {
+    float: left;
+    width: 660px;
+}
+
 .content-sidebar .content,
 .content-sidebar-sidebar .content,
 .sidebar-content-sidebar .content {
@@ -656,6 +669,16 @@ th {
 .sidebar-content .sidebar-primary,
 .sidebar-sidebar-content .sidebar-primary {
     float: left;
+}
+
+.blog .sidebar-content .sidebar-primary,
+.blog .sidebar-sidebar-content .sidebar-primary,
+.single .sidebar-content .sidebar-primary,
+.single .sidebar-sidebar-content .sidebar-primary,
+.archive .sidebar-content .sidebar-primary,
+.archive .sidebar-sidebar-content .sidebar-primary {
+
+    float: right;
 }
 
 /* ### Secondary Sidebar */
@@ -819,12 +842,12 @@ th {
 
 .entry-title a,
 .sidebar .widget-title a {
-    color: #333;
+   color: #c3251d;
 }
 
 .entry-title a:hover,
 .entry-title a:focus {
-    color: #c3251d;
+    color:#492763;
 }
 
 .widget-title {
@@ -1201,7 +1224,14 @@ Site Navigation
 
 .entry {
     margin-bottom: 40px;
-    padding: 30px 0px;
+    padding: 40px 0px;
+}
+
+.blog .entry,
+.single .entry,
+.archive .entry {
+    margin-bottom: 40px;
+    padding: 0px 0px;
 }
 
 .content .entry {
@@ -1236,9 +1266,9 @@ Site Navigation
 --------------------------------------------- */
 
 p.entry-meta {
-    font-size: 16px;
-    font-size: 1.6rem;
-    margin-bottom: 0;
+    font-size: 12px;
+    font-size: .75rem;
+    margin-bottom: 50px;
 }
 
 .entry-header .entry-meta {
@@ -1246,7 +1276,6 @@ p.entry-meta {
 }
 
 .entry-footer .entry-meta {
-    border-top: 2px solid #f5f5f5;
     padding-top: 24px;
 }
 
