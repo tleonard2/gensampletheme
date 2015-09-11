@@ -671,13 +671,9 @@ th {
     float: left;
 }
 
-.blog .sidebar-content .sidebar-primary,
-.blog .sidebar-sidebar-content .sidebar-primary,
-.single .sidebar-content .sidebar-primary,
-.single .sidebar-sidebar-content .sidebar-primary,
-.archive .sidebar-content .sidebar-primary,
-.archive .sidebar-sidebar-content .sidebar-primary {
-
+.blog .sidebar-primary,
+.single .sidebar-primary,
+.archive .sidebar-primary {
     float: right;
 }
 
