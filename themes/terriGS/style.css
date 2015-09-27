@@ -5,7 +5,7 @@ Description: This is the sample theme created for the Genesis Framework.
 Author: StudioPress
 Author URI: http://www.studiopress.com/
 Template: genesis
-Template Version: 2.2.0 CSS 1.5
+Template Version: 2.2.0 CSS 1.9
 Tags: black, orange, white, one-column, two-columns, three-columns, left-sidebar, right-sidebar, responsive-layout, custom-menu, full-width-template, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready
 License: GPL-2.0+
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -510,13 +510,14 @@ input[type="button"],
 input[type="reset"],
 input[type="submit"],
 .button {
-    background-color: #333;
+    background-color: #68BBAF;
     border: 0;
     color: #fff;
     cursor: pointer;
     font-size: 16px;
-    font-size: 1.6rem;
+    font-size: 1.2rem;
     font-weight: 300;
+	border-radius: 10px;
     padding: 16px 24px;
     text-transform: uppercase;
     width: auto;
@@ -532,7 +533,7 @@ input:focus[type="button"],
 input:focus[type="reset"],
 input:focus[type="submit"],
 .button:focus {
-    background-color: #c3251d;
+    background-color: #68BBAF;
     color: #fff;
 }
 
@@ -595,13 +596,13 @@ th {
 .site-inner {
     clear: both;
     padding-top: 50px auto;
-	margin-top: 110px;
+	margin-top: 50px;
 }
 
 .blog .site-inner,
 .single .site-inner,
 .archive .site-inner  {
-	margin-top: 200px;
+	margin-top: 280px;
 }
 
 .home .site-inner {
@@ -639,7 +640,7 @@ th {
 .single .content,
 .archive .content  {
     float: left;
-    width: 660px;
+    max-width: 660px;
 }
 
 .content-sidebar .content,
@@ -811,6 +812,10 @@ th {
     width: 50%;
 }
 
+.entry-content .search-form input {
+    margin-bottom: 10px;
+}
+
 .genesis-nav-menu .search input[type="submit"],
 .widget_search input[type="submit"] {
     border: 0;
@@ -834,6 +839,12 @@ th {
     font-size: 4em;
     font-size: 2.6rem;
 	font-weight: 500;
+	max-width: 990px;
+	margin: -70px auto 0;
+}
+
+.error404 .entry-title {
+	margin: 15px 0;
 }
 
 .entry-title a,
@@ -1001,23 +1012,6 @@ img.alignright,
 }
 
 
-/* Site Header
----------------------------------------------------------------------------------------------------- */
-
-.site-header-banner {
-    height: auto;
-    background-color: #BEBEBE;
-    text-align: center;
-    margin: 20px -9999rem 0;
-    /* add back negative margin value */
-    padding: 0px 9999rem 0;
-}
-
-.site-container .site-header-banner img {
-    vertical-align: top;
-}
-
-
 /*
 Site Navigation
 ---------------------------------------------------------------------------------------------------- */
@@ -1174,10 +1168,10 @@ Site Navigation
     margin-top: -40px;
 }
 
-.site-header .genesis-nav-menu li.menu-item-1122 a {
+.site-header .genesis-nav-menu li.menu-item-779 a {
     min-width: 150px;
     min-height: 112px;
-    background: url(images/logo.png) no-repeat 10px;
+    background: url(images/logo.jpg) no-repeat 10px;
     text-indent: -9999px;
     padding: 58px 8px 40px;
 }
@@ -1220,7 +1214,7 @@ Site Navigation
 
 .entry {
     margin-bottom: 40px;
-    padding: 40px 0px;
+    padding: 10px;
 }
 
 .blog .entry,
@@ -1237,7 +1231,7 @@ Site Navigation
 .entry-content ol,
 .entry-content ul {
     margin-bottom: 28px;
-    margin-left: 40px;
+    margin-left: 0px;
 }
 
 .entry-content ol > li {
@@ -1475,30 +1469,6 @@ only screen and (-moz-min-device-pixel-ratio: 1.5),
 only screen and (-o-min-device-pixel-ratio: 3/2),
 only screen and (min-device-pixel-ratio: 1.5) {
 
-    .search-form input[type="search"] {
-        background-image: url(images/icon-search@2x.png);
-    }
-
-    .content .entry-header .entry-meta .entry-comments-link a {
-        background-image: url(images/icon-comments@2x.png)
-    }
-
-    .sidebar li {
-        background-image: url(images/icon-li@2x.png);
-    }
-
-    .footer-widgets li {
-        background-image: url(images/icon-li-footer@2x.png);
-    }
-
-    .content #genesis-responsive-slider .flex-direction-nav li a {
-        background-image: url(images/icon-direction-nav@2x.png);
-    }
-
-    .content #genesis-responsive-slider .flex-control-nav li a {
-        background-image: url(images/icon-control-nav@2x.png);
-    }
-
     .genesis-nav-menu > .rss > a {
         background-image: url(images/icon-rss@2x.png);
     }
@@ -1511,42 +1481,26 @@ only screen and (min-device-pixel-ratio: 1.5) {
 @media only screen and (max-width: 1200px) {
 
     .site-container {
-        max-width: 960px;
+
+		margin: 0 auto;
     }
 
     .site-header .widget-area {
         width: 700px;
     }
 
-    .content {
-        width: 990px;
-    }
-
     .sidebar-primary {
         width: 300px;
     }
 
-    .title-area {
-        width: 260px;
-    }
-
-    .breadcrumb {
-        margin: -30px -40px 30px;
-    }
-
     .content {
-        padding: 30px 40px 10px;
+        padding: 0px 10px;
     }
 
     .site-header .genesis-nav-menu a {
         padding: 38px 14px 40px;
     }
 
-    .content #genesis-responsive-slider .flex-control-nav,
-    .content #genesis-responsive-slider .flex-direction-nav li a,
-    .content #genesis-responsive-slider .flex-direction-nav li a.prev {
-        display: none;
-    }
 }
 
 @media only screen and (max-width: 1023px) {
@@ -1562,13 +1516,6 @@ only screen and (min-device-pixel-ratio: 1.5) {
     .title-area,
     .wrap {
         width: 100%;
-    }
-
-    .header-image .title-area,
-    .header-image .site-title,
-    .header-image .site-title a {
-        float: none;
-        margin: 0 auto;
     }
 
     .genesis-nav-menu li,
@@ -1591,15 +1538,7 @@ only screen and (min-device-pixel-ratio: 1.5) {
         padding: 16px;
     }
 
-    .site-header .search-form {
-        margin: 16px auto ;
-    }
-
-    .genesis-nav-menu li.right {
-        display: none;
-    }
-
-    .content #genesis-responsive-slider .slide-excerpt {
+  .genesis-nav-menu li.right {
         display: none;
     }
 
@@ -1611,9 +1550,16 @@ only screen and (min-device-pixel-ratio: 1.5) {
 
 @media only screen and (max-width: 800px) {
 
-    .site-container {
+	.site-container {
         max-width: 630px;
     }
+
+	.mktgbuttons .widget,
+	.infobuttons .widget{
+		max-width: 320px;
+		float: none;
+		margin: 20px auto;
+	}
 
     .five-sixths,
     .footer-widgets-1,
@@ -1719,22 +1665,8 @@ only screen and (min-device-pixel-ratio: 1.5) {
     }
 
     .home-middle,
-    .home-top,
-    .executive-pro-portfolio .portfolio {
+    .home-top {
         text-align: center;
-    }
-
-    .executive-pro-portfolio .portfolio {
-        padding: 0 0 30px;
-    }
-
-    .home-cta .button.alignright {
-        float: none;
-        margin: 16px 0 0;
-    }
-
-    .footer-widgets-1 {
-        margin: 0;
     }
 
     .nav-secondary .genesis-nav-menu > .first > a,
@@ -1747,22 +1679,50 @@ only screen and (min-device-pixel-ratio: 1.5) {
 
 @media only screen and (max-width: 500px) {
 
+	.blog .site-inner,
+	.single .site-inner,
+	.archive .site-inner  {
+		margin-top: 80px;
+		max-width: 380px;
+	}
+
+	.blog .sidebar-primary,
+	.single .sidebar-primary,
+	.archive .sidebar-primary {
+		margin: 0 50px;
+		max-width: 280px;
+	}
+
     .entry-title {
         font-size: 24px;
+        text-align: center;
     }
+
+	.entry-content ol,
+	.entry-content ul {
+		margin-bottom: 18px;
+		margin-left: 0px;
+		padding: 0 0 0 20px;
+	}
 
     .content .entry-header .entry-meta .entry-comments-link {
         display: none;
     }
+
+	.sidebar .intro.widget {
+		background-image: none;
+	}
+
+	.footer-widgets .widget-area {
+		width: 360px;
+		margin: 10px auto;
+		float: none;
+		clear: both;
+	}
+
+	.footer-widgets .footermenu {
+		padding-left: 30px;
+	}
 }
 
-@media only screen and (max-width: 270px) {
 
-    .header-image .site-title a {
-        background-size: contain !important;
-    }
-
-    .site-title {
-        font-size: 26px;
-    }
-}
