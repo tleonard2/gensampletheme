@@ -29,7 +29,34 @@ function executive_load_scripts() {
 	wp_enqueue_style( 'google-font', '//fonts.googleapis.com/css?family=PT+Sans:400,400italic,700,700italic|Lato:300,700,300italic', array(), CHILD_THEME_VERSION );
 
 }
+//* ------------------Add Split Navigation ----------------------
+//* Remove the header right widget area
+unregister_sidebar( 'header-right' );
 
+//* Rename menus
+add_theme_support( 'genesis-menus', array( 'primary' => __( 'Left Navigation Menu', 'modern-studio' ), 'secondary' => __( 'Right Navigation Menu', 'modern-studio' ) ) );
+
+//* Hook menus
+add_action( 'genesis_header', 'ms_menus_container' );
+function ms_menus_container() {
+
+	echo '<div class="navigation-container">';
+	do_action( 'ms_menus' );
+	echo '</div>';
+
+}
+
+//* Relocate Primary (Left) Navigation
+remove_action( 'genesis_header', 'genesis_do_nav' );
+add_action( 'ms_menus', 'genesis_do_nav' );
+
+//* Relocate Secondary (Right) Navigation
+remove_action( 'genesis_header', 'genesis_do_subnav' );
+add_action( 'ms_menus', 'genesis_do_subnav' );
+
+//* Remove output of primary navigation right extras
+remove_filter( 'genesis_nav_items', 'genesis_nav_right', 10, 2 );
+remove_filter( 'wp_nav_menu_items', 'genesis_nav_right', 10, 2 );
 
 //* ----------------- Move Entry Header -------------------------
 
@@ -158,3 +185,11 @@ genesis_register_sidebar( array(
 
 
 
+//* ----------------- Footer -------------------------
+
+//* Change the footer text
+add_filter('genesis_footer_creds_text', 'sp_footer_creds_filter');
+function sp_footer_creds_filter( $creds ) {
+	$creds = '[footer_copyright] Terri Fry Brukhartz';
+	return $creds;
+}

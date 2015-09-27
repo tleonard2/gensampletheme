@@ -5,7 +5,7 @@
 	Version: 2.0.1.1
 
 	Template: genesis
-	Template Version: 2.2.0 CSS 1.5
+	Template Version: 2.2.0 CSS 1.9
 
 	License: GPL-2.0+
 	License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -17,13 +17,19 @@
 ==========================================================================
 */
 body {
-	background:url(images/seafoam-bokeh-2000x143px.jpg) no-repeat center 185px;
+	background:#FFF;
 	font-size:62.5%;
 /* 1em = 10px */
 	line-height:1.5em;
 	color:#8A8C8E;
 	font-family: 'PT sans', 'Lato', sans-serif;
 	font-weight: 400;
+}
+
+body.blog,
+body.single,
+body.archive {
+	background:url(images/seafoam-blog.jpg) no-repeat center 185px;
 }
 
 p {
@@ -35,18 +41,34 @@ body.home {
 	background: none;
 }
 
-.site-header-banner {
-	height: auto;
-	background-color:#BEBEBE;
-	text-align: center;
-	margin:20px -9999rem 0;
-/* add back negative margin value */
-	padding:0px 9999rem 0;
+/*
+@media only screen and (min-width: 800px) {
+    .home .site-header-banner {
+		height: auto;
+		text-align: center;
+		margin:20px -9999rem 0;
+		padding:0px 9999rem 0;
+		background-color:#BEBEBE;
+	}
 }
+*/
 
-.site-container .site-header-banner img  {
-	vertical-align: top;
-}
+
+			.site-container .site-header-banner img  {
+				vertical-align: top;
+				min-height: 143px;
+				margin-top: 20px
+			}
+
+			.home .site-container .site-header-banner img  {
+				margin-top: 0px
+			}
+
+			body.blog .site-header-banner img,
+			body.single .site-header-banner img,
+			body.archive .site-header-banner img {
+				display:none;
+			}
 
 
 /*
@@ -225,6 +247,11 @@ a {
 
 /* Home - Info Buttons
 --------------------------------------------- */
+.infobuttons .widget .one-third {
+	max-width: 320px;
+	margin: 10px auto;
+}
+
 .infobuttons h4.widget-title {
 	display: none
 }
@@ -238,11 +265,8 @@ a {
 	margin-right:0;
 }
 
-/*
-==========================================================
- Phone Home
-==========================================================
-*/
+/* Phone Home
+--------------------------------------------- */
 .infobuttons .phonehome {
 	background:#EFEFEF;
 	border-radius:1em;
@@ -278,10 +302,11 @@ a {
 	display: block;
 	background-color:#68BBAF;
 	padding:5px 0px 5px 5px;
-	margin:20px 190px 0 0;
+	margin:20px 0 0 0;
 	color:#FFF;
 	text-transform:uppercase;
 	font-size:1.4em;
+	max-width: 150px;
 }
 
 .infobuttons .fromtheblog ul {
@@ -312,6 +337,7 @@ a {
  Homepage Signupbox Col3
 ==========================================================
 */
+
 .infobuttons .signupbox {
 	background:#A93439;
 	border-radius:1em;
@@ -344,14 +370,14 @@ a {
  Homepage Mail Chimp
 ==========================================================
 */
-.signupbox #mc_embed_signup {
+.signupbox .mc_embed_signup {
 	margin:0;
 	padding:0;
 	width:207px;
 	height:34px;
 }
 
-.infobuttons .signupbox #mc_embed_signup form input {
+.infobuttons .signupbox form input {
 	height:22px;
 	width:185px;
 	border:1px solid #68BBAF;
@@ -361,7 +387,7 @@ a {
 	font-size: 1em;
 }
 
-.infobuttons .signupbox #mc_embed_signup .button {
+.infobuttons .signupbox .button {
 	width:auto;
 	background-color:#68BBAF;
 	font-size:.65em;
@@ -374,7 +400,7 @@ a {
 	font-size:1em;
 }
 
-.infobuttons .signupbox #mc_embed_signup .button:hover {
+.infobuttons .signupbox .button:hover {
 	background:#FFF;
 	color:#A93439;
 }
@@ -433,7 +459,7 @@ a {
 
 .sidebar .swirly {
     margin-bottom: 0px;
-	padding: 10px;
+	padding: 0px 10px 10px 10px;
 
 }
 
@@ -589,31 +615,6 @@ a {
 
 /*
 ==========================================================
-  Right col
-==========================================================
-*/
-.rightcol h3 {
-	margin:10px 0 0;
-}
-
-.rightcol ul {
-	margin:10px 0 0 20px;
-	padding:0;
-	list-style:none;
-	font-size:.85em;
-}
-
-.rightcol li {
-	margin-bottom:5px;
-	color:#8A8C8E;
-}
-
-.rightcol img {
-	padding-bottom:10px;
-}
-
-/*
-==========================================================
  Column Signupbox
 ==========================================================
 */
@@ -623,7 +624,7 @@ a {
 	border-radius:1em;
 	width:210px;
 	color:#FFF;
-	padding:15px 5px 100px 10px;
+	padding:15px 5px 90px 10px;
 	font-size:1.2em;
 	line-height: 1.5;
 	margin:0 auto;
@@ -650,19 +651,19 @@ a {
  Rt sidecol Mail Chimp
 ==========================================================
 */
-.rightcol .signupbox #mc_embed_signup form,
-.sidebar .signupbox #mc_embed_signup form {
+.rightcol .signupbox form,
+.sidebar .signupbox form {
 	width:200px;
 	margin:0;
 	padding:0;
 }
 
-.sidebar .signupbox #mc_embed_signup form {
+.sidebar .signupbox form {
 	width:255px;
 }
 
-.rightcol .signupbox #mc_embed_signup input,
-.sidebar .signupbox #mc_embed_signup input {
+.rightcol .signupbox input,
+.sidebar .signupbox input {
 	height:25px;
 	font-size:80%;
 	width:195px;
@@ -672,14 +673,13 @@ a {
 	border-radius:1em;
 }
 
-.sidebar .signupbox #mc_embed_signup form input {
+.sidebar .signupbox form input {
 	width:220px;
 	margin:0 0 10px 5px;
 	font-size: 70%;
 }
 
-.rightcol .signupbox #mc_embed_signup .button,
-.sidebar .signupbox #mc_embed_signup .button {
+.sidebar .signupbox .button {
 	width:100px;
 	background-color:#68BBAF;
 	color:#FFF;
@@ -691,34 +691,17 @@ a {
 	padding:0 5px;
 }
 
-.rightcol .signupbox #mc_embed_signup .button:hover,
-.sidebar .signupbox #mc_embed_signup .button:hover {
+.rightcol .signupbox .button:hover,
+.sidebar .signupbox .button:hover {
 	background:#FFF;
 	color:#A93439;
 }
 
-.sidebar .signupbox #mc_embed_signup .button {
+.sidebar .signupbox .button {
 	margin:0 0 0 70px;
 }
 
-/*
-==========================================================
-  Side - swirly
-==========================================================
-*/
-.sideswirly {
-	clear:both;
-	padding-top:30px;
-	width:100%;
-	background:url(images/swirlbk.png) repeat-x left 15px;
-	margin-bottom:10px;
-}
 
-.sideswirly img {
-	margin:-60px 0 0 80px;
-	width:50px;
-	text-align:center;
-}
 
 /*
 ==========================================================
@@ -776,27 +759,35 @@ a {
 .blog header.entry-header,
 .single header.entry-header,
 .archive header.entry-header {
+	display: none;
+}
+
+.blog article header.entry-header,
+.single article header.entry-header,
+.archive article header.entry-header {
+	display: block;
 	text-align: left;
 	margin:0 auto;
 }
 
-.entry-content,.blog-entry-content,article {
-	width:640px;
-	float:left;
-	margin:0;
-	padding:0 0 20px;
+.entry-content,
+.blog-entry-content,
+article {
 	font-size:1.1em;
 }
 
-.blog-entry-content .entry-content {
-	border-left:none;
-	padding:0;
-	font-size:1em;
-	padding-bottom:20px;
+.entry-content ol,
+.entry-content ul{
+	font-size:1.4em;
+	line-height: 1.5;
+	margin-bottom: 10px;
 }
 
-#blog-content .entry-content {
-	padding:0;
+.entry-content ul ul {
+	font-size:1em;
+	line-height: 1.5;
+	margin-bottom: 10px;
+	padding: 0;
 }
 
 .blog .entry-title,
@@ -823,71 +814,8 @@ h1.archive-title {
 	color:#024FB2;
 }
 
-.entry-content ul,
-.blog-entry-content ul,
-article ul {
-	font-size:1.4em;
-	font-weight:400;
-	line-height:1em;
-	margin:0;
-}
-.entry-content ol {
-	font-size:1.4em;
-	font-weight:300;
-	line-height:1.5em;
-	margin:10px;
-	padding-left: 50px;
-}
-
-.entry-content ol li {
-	margin-bottom: 10px;
-}
-
-.entry-content ul ul,
-.blog-entry-content ul ul,
-article ul ul {
-	font-size:1em;
-	font-weight:400;
-	line-height:1em;
-	margin:10px 0 0;
-}
-
-.comments-link {
-	font-size:1.4em;
-}
-
-.meta {
-	margin:15px 0;
-	line-height:160%;
-}
-
-.postmetadata {
-	margin:15px 0 30px;
-}
-
 footer.entry-meta {
 	margin-bottom:40px;
-}
-
-#comments label {
-	margin-right:23px;
-}
-
-#comments .comment-form-comment label {
-	margin-right:10px;
-}
-
-#comments input {
-	height:20px;
-}
-
-.form-allowed-tags {
-	display:none;
-}
-
-.entry-content .entry-meta {
-	margin:10px 0;
-	padding:10px 0;
 }
 
 .entry-content .entry-meta a {
@@ -959,6 +887,10 @@ padding-left: 20px;
 .signuppage {
 	float:right;
 	clear:left;
+}
+
+.signuppage form {
+	max-width: 300px;
 }
 
 .imageleft {
@@ -1123,13 +1055,13 @@ padding-left: 20px;
 	display: none;
 }
 
-.footer-widgets #mc_embed_signup form {
+.footer-widgets form {
 	margin:10px 0 0 0;
 	padding:0;
 	width:300px;
 }
 
-.footer-widgets #mc_embed_signup form input {
+.footer-widgets form input {
 	height:22px;
 	width:185px;
 	border:1px solid #A93439;
@@ -1139,19 +1071,19 @@ padding-left: 20px;
 	font-size: 1em;
 }
 
-.footer-widgets #mc_embed_signup .button {
+.footer-widgets .button {
 	width:auto;
 	background-color:#A93439;
 	height:24px;
 	text-transform:uppercase;
-	border-radius:1em;
+	border-radius:10px;
 	text-align:center;
 	line-height:1em;
 	color:#FFF;
-	padding:0 5px;
+	padding:0 15px;
 }
 
-.footer-widgets #mc_embed_signup .button:hover {
+.footer-widgets .button:hover {
 	background:#68BBAF;
 }
 
@@ -1159,4 +1091,27 @@ padding-left: 20px;
 	font-size: 1em;
 	margin-bottom: 10px;
 	padding: 0;
+}
+
+@media only screen and (max-width: 500px) {
+
+	body.blog,
+	body.single,
+	body.archive {
+		background:none;
+	}
+
+	body.blog .site-header-banner img,
+	body.single .site-header-banner img,
+	body.archive .site-header-banner img {
+		display:block;
+		margin-top: 10px;
+	}
+
+	.sidebar .phonehome,
+	.sidebar .signupbox {
+	width:270px;
+	margin: 10px auto 30px auto;
+}
+
 }

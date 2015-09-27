@@ -580,6 +580,7 @@ th {
 
 /* # Structure and Layout
 ---------------------------------------------------------------------------------------------------- */
+/*
 @media only screen and (min-width: 800px) {
     .home .site-header-banner {
 		height: auto;
@@ -589,6 +590,7 @@ th {
 		background-color:#BEBEBE;
 	}
 }
+*/
 
 .site-container .site-header-banner img  {
 	vertical-align: top;
@@ -1472,12 +1474,14 @@ Site Navigation
 	  	background:#F0F0F0;
 }
 
+/*
 @media only screen and (min-width: 800px) {
 	.home .quotebox {
 		margin:30px -9999rem 40px;
 		padding:10px 9999rem 40px;
 	}
 }
+*/
 
 .home .quotebox h4 {
 	display: none;
@@ -2227,19 +2231,15 @@ padding-left: 20px;
 /*
 Footer Widgets
 -------------------------------------------------- */
+
 .footer-widgets {
 	min-height: 250px;
 	background:#818385;
+	margin:0 -9999rem 20px;
+	padding:10px 9999rem 0px;
 	line-height: 1.4;
 	font-size: 1.2em;
 	color: #FFF;
-}
-
-@media only screen and (min-width: 800px) {
-	.footer-widgets {
-		margin:0 -9999rem 20px;
-		padding:10px 9999rem 0px;
-	}
 }
 
 .footer-widgets .wrap {
