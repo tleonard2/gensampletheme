@@ -11,64 +11,6 @@
 	License URI: http://www.gnu.org/licenses/gpl-2.0.html
 */
 
-/*
-==========================================================================
-   Styles
-==========================================================================
-*/
-body {
-	background:#FFF;
-	font-size:62.5%;
-/* 1em = 10px */
-	line-height:1.5em;
-	color:#8A8C8E;
-	font-family: 'PT sans', 'Lato', sans-serif;
-	font-weight: 400;
-}
-
-body.blog,
-body.single,
-body.archive {
-	background:url(images/seafoam-blog.jpg) no-repeat center 185px;
-}
-
-p {
-	font-size: 1.4em;
-	line-height: 1.5;
-}
-
-body.home {
-	background: none;
-}
-
-/*
-@media only screen and (min-width: 800px) {
-    .home .site-header-banner {
-		height: auto;
-		text-align: center;
-		margin:20px -9999rem 0;
-		padding:0px 9999rem 0;
-		background-color:#BEBEBE;
-	}
-}
-*/
-
-
-			.site-container .site-header-banner img  {
-				vertical-align: top;
-				min-height: 143px;
-				margin-top: 20px
-			}
-
-			.home .site-container .site-header-banner img  {
-				margin-top: 0px
-			}
-
-			body.blog .site-header-banner img,
-			body.single .site-header-banner img,
-			body.archive .site-header-banner img {
-				display:none;
-			}
 
 
 /*
@@ -76,61 +18,7 @@ body.home {
   General
 ==========================================================
 */
-hr {
-	-moz-box-sizing:content-box;
-	box-sizing:content-box;
-	height:0;
-	display:block;
-	height:1px;
-	border:0;
-	border-top:1px solid #ccc;
-	margin:1em 0;
-	padding:0;
-}
 
-p.red {
-	color:#A93439;
-	text-align:center;
-}
-
-h1,h2,h3,h4 {
-	font-family:'lato',sans-serif;
-	font-weight:400;
-	color:#492763;
-	line-height:1.5em;
-}
-
-h1 {
-	font-size:2.25em;
-}
-
-h2 {
-	font-size:2em;
-}
-
-h3 {
-	font-size:1.6em;
-}
-
-h4 {
-	font-size:1.4em;
-}
-
-ul {
-	padding-left:50px;
-	margin-bottom:15px;
-}
-
-ul li {
-	padding-left:5px;
-	list-style:disc;
-	padding-bottom:10px;
-	line-height:160%;
-}
-
-a {
-	text-decoration:none;
-}
 
 
 /* Home Page
@@ -265,8 +153,11 @@ a {
 	margin-right:0;
 }
 
-/* Phone Home
---------------------------------------------- */
+/*
+==========================================================
+ Phone Home
+==========================================================
+*/
 .infobuttons .phonehome {
 	background:#EFEFEF;
 	border-radius:1em;
@@ -938,180 +829,141 @@ padding-left: 20px;
 	color:#FFF;
 }
 
-/*
-==========================================================
- Footer
-==========================================================
-*/
-.footer-widgets {
-	min-height: 250px;
-	background:#818385;
-	margin:0 -9999rem 20px;
-	padding:10px 9999rem 0px;
-	line-height: 1.4;
-	font-size: 1.2em;
-	color: #FFF;
-}
 
-.footer-widgets h4 {
-	font-size: 1em;
-	color: #FFF;
-	margin: 0 0 10px;
-	padding: 0;
-}
-
-.footer-widgets #menu-footer-menu li {
-	list-style:none;
-	padding-bottom: 5px;
-}
-
-.footer-widgets a:link,
-.footer-widgets a:visited {
-	color:#FFF;
-}
-
-.footer-widgets a:hover {
-	color:#68BBAF;
-	font-weight:400;
-}
-
-.footer-widgets ul {
-	list-style:none;
-	margin-left:0;
-	padding-left:0;
-}
-
-.footer-widgets .widget ul > li {
-    list-style-position: outside;
-    padding: 0 0 0 0;
-}
 
 /*
-==========================================================
- Footer Column 1
-==========================================================
-*/
-.footer-widgets .footer-widgets-1 .footermenu {
-	text-transform: uppercase;
+Primary Nav on left, Site Title or Logo in the middle and Secondary Nav on right
+--------------------------------------------------------------------------------- */
+
+.header-image .site-header .wrap {
+	background: transparent;
 }
 
-.footer-widgets .footer-widgets-1 .menu-footer-menu-container,
-.footer-widgets .footer-widgets-1 .menu-footer-menu,
-.footer-widgets .footer-widgets-1 .footermenu {
-	width:115px;
+.header-image .site-title a {
+	background: url("images/logo.jpg") no-repeat;
+	text-indent: -9999em;
+	width: 130px;
+	height: 111px;
+}
+
+.header-image .site-title a {
+	min-height: 0;
+}
+
+.site-header {
+	padding-top: 1rem;
+	padding-bottom: 0;
+}
+
+.site-header .nav-primary {
+	width: auto;
 	float: left;
+	margin-top: 20px;
 }
 
-.footer-widgets .footer-widgets-1 .contact {
-	float:right;
-	width:185px;
+.site-header .site-title {
+	margin-top: 0;
 }
 
-.footer-widgets ul.address {
-	margin: 0;
-	padding: 0;
-	padding-bottom: 5px;
+.site-header .site-title a {
+	float: left;
+	text-indent: -9999px;
+	min-height: 123px;
 }
 
-.footer-widgets ul.address li {
-	list-style:none;
-	padding-bottom: 5px;
+.site-header .nav-secondary {
+	width: auto;
+	float: left;
+	padding-left: 0;
 }
 
-/*
-==========================================================
- Footer Column 2
-==========================================================
-*/
-.footer-widgets .footer-widgets-2 h4.widget-title {
-	text-align: center;
-	text-transform: uppercase;
+.site-header .nav-secondary ul {
+	padding: 0 60px 0 0;
 }
 
-.footer-widgets .footerlogos {
-	text-align: center;
-	max-width: 260px;
-	margin: 20px auto;
+.nav-primary {
+	background-color: transparent;
 }
 
-.footer-widgets .footerlogos .wp-image-624 {
-	width: 125px;
-	margin: 0 auto;
-}
-.footer-widgets .footerlogos h4.widget-title {
-	display:none;
+.nav-primary a:hover, .nav-primary .current-menu-item > a {
+	color: #333;
 }
 
-.footer-widgets .footerlogos img {
-	margin-right:3px;
+.nav-secondary .wrap {
+    float: right;
 }
 
-/*
-==========================================================
- Mail Chimp
-==========================================================
-*/
-.footer-widgets .footer-widgets-3 h4.widget-title {
-	display: none;
-}
+@media only screen and (max-width: 1024px) {
 
-.footer-widgets form {
-	margin:10px 0 0 0;
-	padding:0;
-	width:300px;
-}
-
-.footer-widgets form input {
-	height:22px;
-	width:185px;
-	border:1px solid #A93439;
-	padding:0 0 0 15px;
-	margin:0 0 10px;
-	border-radius:1em;
-	font-size: 1em;
-}
-
-.footer-widgets .button {
-	width:auto;
-	background-color:#A93439;
-	height:24px;
-	text-transform:uppercase;
-	border-radius:10px;
-	text-align:center;
-	line-height:1em;
-	color:#FFF;
-	padding:0 15px;
-}
-
-.footer-widgets .button:hover {
-	background:#68BBAF;
-}
-
-.footer-widgets .footer-widgets-3 p {
-	font-size: 1em;
-	margin-bottom: 10px;
-	padding: 0;
-}
-
-@media only screen and (max-width: 500px) {
-
-	body.blog,
-	body.single,
-	body.archive {
-		background:none;
+	.site-header .nav-primary {
+		float: none;
+		width: 100%;
+		margin-right: 0;
 	}
 
-	body.blog .site-header-banner img,
-	body.single .site-header-banner img,
-	body.archive .site-header-banner img {
-		display:block;
-		margin-top: 10px;
+	.site-header .site-title {
+		float: none;
+		width: 100%;
+		margin-top: 0;
+		overflow: hidden;
+		margin-right: 0;
 	}
 
-	.sidebar .phonehome,
-	.sidebar .signupbox {
-	width:270px;
-	margin: 10px auto 30px auto;
-}
+	.header-image .site-title a {
+		float: none;
+		margin: 0 auto;
+	}
+
+	.site-header .nav-secondary {
+		float: none;
+		width: 100%;
+	}
+
+	.site-header .wrap {
+		padding: 20px 0;
+		padding: 2rem 0;
+	}
+
+	.header-image .site-header .wrap {
+		background-position: center top;
+	}
+
+	.site-header {
+		padding: 0;
+	}
+
+	.genesis-nav-menu li,
+	.site-header ul.genesis-nav-menu,
+	.site-header .search-form {
+		float: none;
+	}
+
+	.genesis-nav-menu,
+	.site-description,
+	.site-header .title-area,
+	.site-header .search-form,
+	.site-title {
+		text-align: center;
+	}
+
+	.genesis-nav-menu a,
+	.genesis-nav-menu > .first > a,
+	.genesis-nav-menu > .last > a {
+		padding: 20px 16px;
+		padding: 2rem 1.6rem;
+	}
+
+	.site-header .search-form {
+		margin: 16px auto ;
+		margin: 1.6rem auto;
+	}
+
+	.genesis-nav-menu li.right {
+		display: none;
+	}
+
+	.nav-secondary .wrap {
+		float: none;
+	}
 
 }
