@@ -13,7 +13,7 @@
 	Template Version: 2.1.2
 
 	License: GPL-2.0+
-	License URI: http://www.opensource.org/licenses/gpl-license.php 
+	License URI: http://www.opensource.org/licenses/gpl-license.php
 */
 
 /* Table of Contents
@@ -1147,7 +1147,7 @@ a[rel~="attachment"]:hover,
 
 .sticky-message p:last-child {
 	margin-bottom: 0;
-} 
+}
 
 
 /* Site Header
@@ -1750,7 +1750,7 @@ p.form-submit,
 	.genesis_responsive_slider #genesis-responsive-slider .flex-direction-nav li a {
 		background-image: url(images/icon-direction-nav@2x.png);
 	}
-	
+
 }
 
 @media only screen and (min-width: 930px) {
@@ -1780,7 +1780,7 @@ p.form-submit,
 		margin-right: auto;
 		width: 80%;
 	}
-	
+
 	.footer-widgets .widget:last-child {
 		margin-bottom: 0;
 	}
@@ -1837,11 +1837,11 @@ p.form-submit,
 		opacity: 0;
 		position: absolute;
 	}
-	
+
 	.genesis-nav-menu .menu-item:hover {
 		position: relative;
 	}
-	
+
 	.genesis-nav-menu .sub-menu:after,
 	.genesis-nav-menu .sub-menu:before {
 		bottom: 100%;
@@ -1853,19 +1853,19 @@ p.form-submit,
 		position: absolute;
 		pointer-events: none;
 	}
-	
+
 	.genesis-nav-menu .sub-menu:after {
 		border-bottom-color: #000;
 		border-width: 10px;
 		margin-left: -10px;
 	}
-	
+
 	.genesis-nav-menu .sub-menu:before {
 		border-bottom-color: #000;
 		border-width: 11px;
 		margin-left: -11px;
 	}
-	
+
 	.genesis-nav-menu .sub-menu .sub-menu:after,
 	.genesis-nav-menu .sub-menu .sub-menu:before {
 		display: none;
@@ -1893,7 +1893,7 @@ p.form-submit,
 		margin-left: -100px;
 		opacity: 1;
 	}
-	
+
 	.genesis-nav-menu .menu-item:hover > .sub-menu > .menu-item:hover > .sub-menu {
 		left: 199px;
 		margin-left: 0px;
@@ -1914,13 +1914,13 @@ p.form-submit,
 		background-color: #fff;
 		margin-bottom: 0;
 		padding: 0;
-		width: 40%;		
+		width: 40%;
 	}
-	
+
 	.nav-primary {
 		float: left;
 	}
-	
+
 	.nav-secondary {
 		float: right;
 		text-align: right;
@@ -1965,35 +1965,35 @@ p.form-submit,
 		float: left;
 		margin-left: 2.564102564102564%;
 	}
-	
+
 	.one-half,
 	.three-sixths,
 	.two-fourths {
 		width: 48.717948717948715%;
 	}
-	
+
 	.one-third,
 	.two-sixths {
 		width: 31.623931623931625%;
 	}
-	
+
 	.four-sixths,
 	.two-thirds {
 		width: 65.81196581196582%;
 	}
-	
+
 	.one-fourth {
 		width: 23.076923076923077%;
 	}
-	
+
 	.three-fourths {
 		width: 74.35897435897436%;
 	}
-	
+
 	.one-sixth {
 		width: 14.52991452991453%;
 	}
-	
+
 	.five-sixths {
 		width: 82.90598290598291%;
 	}
@@ -2022,9 +2022,9 @@ p.form-submit,
 	.site-container {
 		padding: 20px 100px 100px;
 	}
-	
+
 	.genesis-nav-menu a {
 		padding: 29px 20px;
 	}
-	
+
 }
