@@ -244,6 +244,9 @@ function ms_entry_meta_header( $post_info ) {
 	return $post_info;
 
 }
+//* move footer
+remove_action( 'genesis_footer', 'genesis_do_footer' );
+add_action( 'genesis_after', 'genesis_do_footer' );
 
 //* Customize the entry meta in the entry footer
 add_filter( 'genesis_post_meta', 'ms_entry_meta_footer' );

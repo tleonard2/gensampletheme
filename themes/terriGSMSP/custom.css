@@ -151,18 +151,21 @@
 .infobuttons .phonehome {
 	background:#EFEFEF;
 	border-radius:1em;
-	padding:25px 5px 30px 30px;
+	padding:5px 5px 0px 30px;
 }
 
 .infobuttons .phonehome h3 {
 	color:#68BBAF;
 	font-size:2.2em;
+	line-height: 1
 }
 
 .infobuttons .phonehome h4 {
 	color:#68BBAF;
 	font-size:2em;
 	font-weight:400;
+	line-height: 1
+
 }
 
 .infobuttons .phonehome img {
@@ -236,7 +239,7 @@
 /* Minimum width of 600 pixels. */
 @media screen and (min-width: 600px) {
 	.infobuttons .signupbox p {
-		font-size:1.5em;
+		font-size:1.4em;
 		padding:5px 5px 10px 0;
 	}
 }
@@ -1081,7 +1084,8 @@ h1.site-title {
 
 	.site-container {
 		margin: 0px auto;
-		padding: 20px 60px 100px;
+		/* padding: 20px 60px 100px; */
+		padding: 0;
 	}
 
 	.ms-landing .site-container {
@@ -1214,7 +1218,7 @@ h1.site-title {
 	.navigation-container {
 		background-color: #fff;
 		margin-bottom: 8px;
-		margin-top: -80px;
+		margin-top: -110px;
 		min-height: 70px;
 	}
 
