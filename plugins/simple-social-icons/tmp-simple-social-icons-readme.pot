@@ -1,0 +1,190 @@
+msgid ""
+msgstr "MIME-Version: 1.0\n"
+
+#. Name.
+msgid "Simple Social Icons"
+msgstr ""
+
+#. Short description.
+msgid "This plugin allows you to insert social icons in any widget area."
+msgstr ""
+
+#. Found in description paragraph.
+msgid "Simple Social Icons is an easy to use, customizable way to display icons that link visitors to your various social profiles. With it, you can easily choose which profiles to link to, customize the color and size of your icons, as well as align them to the left, center, or right, all from the widget form (no settings page necessary!)."
+msgstr ""
+
+#. Found in installation list item.
+msgid "Upload the entire simple-social-icons folder to the /wp-content/plugins/ directory"
+msgstr ""
+
+#. Found in installation list item.
+msgid "Activate the plugin through the 'Plugins' menu in WordPress"
+msgstr ""
+
+#. Found in installation list item.
+msgid "In your Widgets menu, simply drag the widget labeled \"Simple Social Icons\" into a widgetized Area."
+msgstr ""
+
+#. Found in installation list item.
+msgid "Configure the widget by choosing a title, icon size and color, and the URLs to your various social profiles."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Update enqueue version for stylesheet, for cache busting."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Update textdomain, generate POT."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "PHP7 compatibility"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added border options"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added Bloglovin icon"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added filters"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Updated LICENSE.txt file to include social extension"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Updated version in enqueue script function"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added Tumblr icon"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "More specific in the CSS to avoid conflicts"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Made color and background color more specific in the CSS to avoid conflicts"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Switched to icon fonts, rather than images"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added Instagram icon"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added YouTube icon"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added bottom margin to icons"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed CSS conflict in some themes"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added new profile options"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Changed default border radius to 3px"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed some styling issues"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Initial Beta Release"
+msgstr ""
+
+#. Found in faq header.
+msgid "Can I reorder the icons?"
+msgstr ""
+
+#. Found in faq header.
+msgid "Which services are included?"
+msgstr ""
+
+#. Found in faq list item.
+msgid "Bloglovin"
+msgstr ""
+
+#. Found in faq list item.
+msgid "Dribbble"
+msgstr ""
+
+#. Found in faq list item.
+msgid "Email"
+msgstr ""
+
+#. Found in faq list item.
+msgid "Facebook"
+msgstr ""
+
+#. Found in faq list item.
+msgid "Flickr"
+msgstr ""
+
+#. Found in faq list item.
+msgid "Github"
+msgstr ""
+
+#. Found in faq list item.
+msgid "Google+"
+msgstr ""
+
+#. Found in faq list item.
+msgid "Instagram"
+msgstr ""
+
+#. Found in faq list item.
+msgid "LinkedIn"
+msgstr ""
+
+#. Found in faq list item.
+msgid "Pinterest"
+msgstr ""
+
+#. Found in faq list item.
+msgid "RSS"
+msgstr ""
+
+#. Found in faq list item.
+msgid "StumbleUpon"
+msgstr ""
+
+#. Found in faq list item.
+msgid "Tumblr"
+msgstr ""
+
+#. Found in faq list item.
+msgid "Twitter"
+msgstr ""
+
+#. Found in faq list item.
+msgid "Vimeo"
+msgstr ""
+
+#. Found in faq list item.
+msgid "YouTube"
+msgstr ""
+
+#. Found in faq paragraph.
+msgid "No, not at this time."
+msgstr ""
+
+#. Found in faq paragraph.
+msgid "NOTE - The rights to each pictogram in the social extension are either trademarked or copyrighted by the respective company. Icons that are included in the social extension can be identified at http://www.entypo.com/."
+msgstr ""

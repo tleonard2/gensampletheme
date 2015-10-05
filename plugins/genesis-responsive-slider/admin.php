@@ -30,7 +30,7 @@ function genesis_responsive_slider_defaults() {
 		'slideshow_effect' => 'slide',
 		'slideshow_excerpt_content' => 'excerpts',
 		'slideshow_excerpt_content_limit' => 150,
-		'slideshow_more_text' => '[Continue Reading]',
+		'slideshow_more_text' => __( '[Continue Reading]', 'genesis-responsive-slider' ),
 		'slideshow_excerpt_show' => 1,
 		'slideshow_excerpt_width' => 50,
 		'location_vertical' => 'bottom',
@@ -347,7 +347,7 @@ function genesis_responsive_slider_options_box() {
 			<h4><?php _e( 'Content Settings', 'genesis-responsive-slider' ); ?></h4>
 
 				<p>
-					<input type="checkbox" name="<?php echo GENESIS_RESPONSIVE_SLIDER_SETTINGS_FIELD; ?>[slideshow_no_link]" id="<?php echo GENESIS_SLIDER_SETTINGS_FIELD; ?>[slideshow_title_show]" value="1" <?php checked(1, genesis_get_responsive_slider_option('slideshow_no_link')); ?> /> <label for="<?php echo GENESIS_SLIDER_SETTINGS_FIELD; ?>[slideshow_no_link]"><?php _e( 'Do not link Slider image to Post/Page.', 'genesis-slider' ); ?></label>
+					<input type="checkbox" name="<?php echo GENESIS_RESPONSIVE_SLIDER_SETTINGS_FIELD; ?>[slideshow_no_link]" id="<?php echo GENESIS_SLIDER_SETTINGS_FIELD; ?>[slideshow_title_show]" value="1" <?php checked(1, genesis_get_responsive_slider_option('slideshow_no_link')); ?> /> <label for="<?php echo GENESIS_SLIDER_SETTINGS_FIELD; ?>[slideshow_no_link]"><?php _e( 'Do not link Slider image to Post/Page.', 'genesis-responsive-slider' ); ?></label>
 				</p>
 
 				<p>
